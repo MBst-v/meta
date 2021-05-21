@@ -1,0 +1,45 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  &__gallery {
+    &-img {}
+
+    &-nav {}
+
+    &-prev {}
+
+    &-next {}
+  }
+
+  &__title {}
+
+  &__descr {}
+
+  &__feats {}
+}
+
+.about-partners {
+  &__nav {}
+
+  &__dots {}
+}
+
+#about-partners {
+  overflow: hidden;
+}
+
+#about-gallery {}
+
+.feat {
+
+  &:nth-last-child(n+2) {}
+
+  &__img {}
+
+  &__title {}
+}
+
+.partner {}

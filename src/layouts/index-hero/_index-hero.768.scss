@@ -1,0 +1,78 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.index-hero {
+  .slick-track {
+    // align-items: flex-start;
+  }
+
+  &__slide {
+    // padding: 60px calc(50vw - 299px) 270px;
+    padding: 60px calc(50vw - 299px) 50px;
+    position: relative;
+
+    &[data-id="slide-help"] {
+      >.index-hero__title {
+        max-width: 400px;
+      }
+
+      >.index-hero__descr {
+        max-width: 322px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+  }
+
+  &__descr {
+    margin: 0 0 40px;
+    // max-width: 495px;
+  }
+
+  &__btn {
+    margin: 0 0 -70px;
+    width: 255px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__nav {
+    padding: 0;
+    bottom: 20px;
+    left: calc(50vw - 344px);
+    transform: none;
+  }
+
+  &__arrows {
+    width: 688px;
+    height: 22px;
+    top: 50%;
+    left: calc(50vw - 344px);
+    transform: translateY(-50%);
+
+    .arrow__svg {
+      width: 12px;
+      height: 22px;
+    }
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+
+  &__img {
+    width: 450px;
+    margin: auto 0 0 auto;
+    display: block;
+    pointer-events: none;
+  }
+}

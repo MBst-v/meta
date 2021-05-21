@@ -1,0 +1,37 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.consult-popup {
+  &__cnt {
+    padding: 40px;
+  }
+
+  &__close {}
+}
+
+.consult-popup__form {
+
+  &-title {}
+
+  &-descr {}
+
+  &-field_name,
+  &-field_tel,
+  &-field_email {}
+
+  &-field_name {}
+
+  &-field_tel {}
+
+  &-field_email {}
+
+  &-field_msg {}
+
+  &-bottom {}
+
+  &-check {}
+
+  &-btn {}
+}

@@ -1,0 +1,26 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-page {
+  &__title {}
+
+  &__descr {}
+
+  &__contacts {
+    >.contact {
+      &:nth-last-child(n+2) {}
+    }
+  }
+
+  &__map {}
+}
+
+.contact {
+  &__subtitle {}
+
+  &__suptitle {}
+}
+
+.working-hours {}

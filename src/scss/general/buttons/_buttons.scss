@@ -1,0 +1,33 @@
+// assets import
+@import '../../assets/colors';
+@import '../../assets/mixins';
+@import '../../assets/variables';
+
+.btn {
+  font: bold 16px/100% Montserrat;
+  border: 1px solid;
+  transition: border-color .5s, color .5s, background .5s, opacity .5s;
+  &_blue {
+    background: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+  &_red {
+    background: $red;
+    border-color: $red;
+    color: $white;
+  }
+  &:focus {
+    outline: 1px dotted $black;
+  }
+}
+
+.btn_ol {
+  background: transparent;
+  &.btn_blue {
+    color: $blue;
+  }
+  &.btn_red {
+    color: $red;
+  }
+}

@@ -1,0 +1,166 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.online-matching-sect {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  display: flex;
+}
+
+.online-matching-block {
+  padding: 0;
+  margin: 0 20px 0 0;
+  // width: 100%;
+  // width: 620px;
+  &__title {}
+
+  &__descr {
+    &:nth-last-of-type(n+2) {}
+  }
+}
+
+.online-matching {
+  &__breadcrumbs {}
+
+  &__steps {}
+
+  &__step-title {}
+
+  &__step-title-number {}
+
+  &__step-title-text {}
+
+  &__step {}
+
+  &__system {}
+
+  &__system-img {}
+
+  &__sytem-text {}
+
+  &__system-title {}
+
+  &__system-descr {}
+
+  &__system-props {}
+
+  &__system-li {}
+
+  &__system-btn {
+    margin-top: 25px;
+  }
+}
+
+.online-matching-contacts {
+  padding: 35px 20px 35px 45px;
+  column-count: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  // width: 300px;
+  // height: 370px;
+  // width: 275px;
+  height: 390px;
+  position: sticky;
+  right: 0;
+  top: 70px;
+  &__title {}
+
+  &__contact {
+    &:nth-child(n) {
+      margin: 0;
+    }
+    &:nth-last-of-type(n+3) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__btn {
+    width: 265px;
+    margin: auto 0 20px -27.5px;
+  }
+
+  &__result-btns {
+    width: 265px;
+    margin-left: -27.5px;
+  }
+}
+
+/* РЕЗУЛЬТАТ */
+.online-matching {
+  &__result {}
+
+  &__result-title {}
+
+  &__result-params {}
+
+  &__result-row {}
+
+  &__resul-row-left {
+    font-size: 15px;
+  }
+
+  &__resul-row-dots {}
+
+  &__resul-row-right {
+    font-size: 15px;
+  }
+
+  &__result-equpiment-block {
+    padding: 70px 0;
+  }
+
+  &__result-equpiment-title {}
+
+  &__result-equpiment {}
+
+  &__product {
+    width: calc((100% - 20px) / 2);
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+    > .product__img {
+      height: 200px;
+    }
+  }
+
+  &__result-docs-schemes {
+    padding: 70px 0;
+  }
+
+  &__result-schemes-title {}
+
+  &__result-schemes-descr {}
+
+  &__result-docs {
+    flex-flow: wrap;
+    > .doc-wrap {
+      // margin-right: 20px;
+    }
+    .doc {
+      &__img {}
+
+      &__text {}
+
+      &__title {}
+
+      &__size {}
+    }
+  }
+
+  &__result-schemes-scheme {}
+}
+
+#reset-btn {
+  >.reset-arrow {}
+}
+
+#print {
+  >.print-icon {}
+}

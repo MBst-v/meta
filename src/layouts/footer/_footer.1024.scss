@@ -1,0 +1,56 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.ftr {
+  padding-top: 50px;
+  padding-bottom: 45px;
+
+  &__logo {
+    margin: 0 0 20px;
+  }
+
+  &__logo-img {
+    width: 200px;
+    height: 60px;
+  }
+
+  &__copyright {
+    >.br1 {
+      display: none;
+    }
+  }
+
+  &__nav {
+    font-size: 15px;
+    line-height: 100%;
+  }
+
+  &__nav-list {}
+
+  &__nav-li {
+    >.nav__link {}
+
+    &:nth-last-child(n+2) {
+      margin: 0 0 25px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 40px;
+  }
+
+  &__policy {}
+
+  &__dev {}
+
+  &__dev-link {}
+}
+
+.ftr__dev-link,
+.ftr__nav-li>.nav__link,
+.hdr__nav-list>.hdr__nav-li>.nav__link {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color .5s, color .5s;
+}

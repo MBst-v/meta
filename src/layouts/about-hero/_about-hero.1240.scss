@@ -1,0 +1,42 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  &__gallery-img {}
+
+  &__gallery-nav {}
+
+  &__gallery-prev,
+  &__gallery-next {}
+
+  &__gallery-next {}
+
+  &__title {
+    margin: 0 0 35px;
+  }
+
+  &__text {}
+
+  &__descr {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__feats {
+    margin-top: 125px;
+  }
+}
+
+#about-gallery {
+  margin: 14px 0 0 120px;
+  width: 385px;
+}
+
+.feat {
+  width: 285px;
+
+  &__img {}
+
+  &__title {}
+}

@@ -1,0 +1,269 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.production {
+  padding-top: 25px;
+  padding-bottom: 80px;
+
+  &__catalogue-wrap {}
+
+  &__pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: $blue;
+    font: 16px/100% Montserrat;
+    > .page-numbers {
+      border-bottom: 1px solid transparent;
+      transition: color .5s, text-shadow .5s, border-bottom-color .5s;
+      &:nth-last-child(n+2) {
+        margin-right: 15px;
+      }
+      &.next,
+      &.prev {
+        font-size: 0;
+        // margin: 0 0 0 20px;
+        display: flex;
+        align-items: center;
+      }
+      &.next {
+        > .page-numbers-arrow {
+          margin: 0 0 0 10px;
+        }
+      }
+      &.prev {
+          // margin: 0 35px 0 0;
+        > .page-numbers-arrow {
+          margin: 0 10px 0 0;
+        }
+      }
+      &.current {
+        pointer-events: none;
+        color: $red;
+        text-shadow: .25px .25px,
+                     .5px .5px,
+                     -.25px -.25px,
+                     -.5px -.5px;
+      }
+      &.dots {
+        pointer-events: none;
+      }
+      &:hover {
+        border-bottom-color: currentColor;
+      }
+      &.next:hover,
+      &.prev:hover {
+        border-bottom-color: transparent;
+        color: $red;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/140% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 35px;
+    font: 16px/140% Montserrat;
+  }
+
+  &__catalogue {
+    margin-top: 35px;
+  }
+
+  &__loadmore {
+    margin: 70px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 45px;
+    font: 16px/100% Montserrat;
+    color: $blue;
+    border: 1px solid $blue;
+    background: $white;
+    transition: background .5s, color .5s;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__product {
+    margin: 0 0 40px;
+    width: 280px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    >.product__img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+}
+
+.product {
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  &__img {
+    padding: 15px 15px 15px 10px;
+    margin: 0 0 5px;
+    object-fit: contain;
+    color: rgba(0,0,0,0);
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font: bold 18px/140% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 30px;
+    font: 15px/140% Montserrat;
+    color: #787b7e;
+  }
+
+  &__link {
+    font: bold 16px/100% Montserrat;
+    color: $blue;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .5s;
+  }
+}
+
+#filter-open-btn {
+  margin: 0 0 40px;
+  display: flex;
+  align-items: center;
+  font: 16px/100% Montserrat;
+  color: $black;
+
+  &::before {
+    margin: 0 10px 0 0;
+    content: url('../img/icon-filter.svg');
+  }
+}
+
+
+.production {
+  &__filter {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font: 16px/140% Montserrat;
+    color: $black;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    // display: none;
+  }
+}
+
+.filter {
+  &__cnt {
+    padding: 25px 20px 50px;
+    background: $white;
+  }
+
+  &__close {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: #d5d4d0;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 0 22px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    height: 65px;
+  }
+
+  &__parent-category-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100%;
+    line-height: 100%;
+    // background: $lightblue;
+    transition: background .5s, color .5s;
+    &.current{
+      font-weight: bold;
+      color: $blue;
+      // background: 0 0;
+      pointer-events: none;
+    }
+  }
+
+  &__categories {
+    // display: grid;
+    // grid-template-rows: 100%;
+    // grid-template-columns: 100%;
+  }
+
+  &__category {
+    // grid-row: 1;
+    // grid-column: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    &.is-active {
+      
+    }
+  }
+
+  &__link {
+    width: 100%;
+    padding: 15px 20px;
+    border-top: 1px solid $lightgrey;
+    transition: background .5s;
+
+    &:first-child {
+      border-top: 0;
+      // font-weight: bold;
+      // color: $blue;
+    }
+
+    &.current {
+      font-weight: bold;
+      color: $blue;
+      // background: $lightblue;
+      // color: $black;
+      pointer-events: none;
+    }
+  }
+}
+
+.production__catalogue.solutions {
+  .product__img {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}

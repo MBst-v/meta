@@ -1,0 +1,17 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+// blocks import
+@import '../layouts/about-hero/about-hero';
+@import '../layouts/about-team/about-team';
+@import '../layouts/w2b-hero/w2b-hero';
+@import '../layouts/w2b-contacts/w2b-contacts';
+@import '../layouts/w2b-partners/w2b-partners';
+@import '../layouts/contacts-hero/contacts-hero';
+@import '../layouts/contacts-contacts/contacts-contacts';
+@import '../layouts/contacts-delivery/contacts-delivery';
+@import '../layouts/contacts-service/contacts-service';
+@import '../layouts/contacts-callback/contacts-callback';
+@import '../layouts/route-popup/route-popup';

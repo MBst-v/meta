@@ -1,0 +1,13 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+// blocks import
+@import '../layouts/index-hero/index-hero.576';
+@import '../layouts/index-equipment/index-equipment.576';
+@import '../layouts/index-solutions/index-solutions.576';
+@import '../layouts/index-consult/index-consult.576';
+@import '../layouts/index-about/index-about.576';
+@import '../layouts/index-promo/index-promo.576';
+@import '../layouts/hero-404/hero-404.576';

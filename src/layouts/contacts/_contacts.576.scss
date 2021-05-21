@@ -1,0 +1,50 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {}
+
+.contacts {
+
+  &__title {}
+
+  &__contacts-block {
+    column-count: 2;
+  }
+
+  &__contact {
+    &_tel {}
+
+    &_email {
+      margin: 0 0 30px;
+    }
+
+    &_address {}
+  }
+}
+
+.contacts-form-wrap {}
+
+.contacts-form {
+
+  &__title {}
+
+  &__descr {}
+
+  &__field {}
+
+  &__field_name {}
+
+  &__field_tel,
+  &__field_email,
+  &__field_msg {}
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__bottom {}
+
+  &__btn {}
+}

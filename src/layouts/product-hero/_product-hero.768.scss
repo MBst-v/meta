@@ -1,0 +1,81 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.product-hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__gallery {
+    
+  }
+
+  &__text {}
+
+  &__title {
+    margin: 0 0 25px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__descr {}
+
+  &__list {
+    
+  }
+
+  &__list-title {}
+
+  &__ul {}
+
+  &__li {
+    &:nth-last-child(n+2) {}
+
+    &::before {}
+  }
+
+  &__btn {
+
+  }
+}
+
+.product-gallery {
+  &__slide {}
+
+  &__img {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+}
+
+// Основной слайдер
+#product-gallery-slides {
+  width: 560px;
+  .product-gallery__slide {
+    width: 560px;
+    height: 560px;
+  }
+  +#product-gallery-arrows {}
+}
+
+#product-gallery-arrows {
+  width: 560px;
+}
+
+#product-gallery-nav {
+  width: 90px;
+  &.slick-slider {}
+
+  .slick-track {
+  }
+
+  .product-gallery__slide {
+    width: 90px;
+    height: 90px;
+    &.active {}
+  }
+}

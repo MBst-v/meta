@@ -1,0 +1,30 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+/* Описание .search-inp частично в interface.scss */
+
+/* Описание .tel частично в interface.scss */
+
+.hdr {
+  &__top {}
+
+  &__logo {}
+
+  &__logo-img {}
+
+  &__bottom {}
+
+  &__nav {}
+
+  &__tel {}
+
+  &__search-form {}
+
+  &__burger {}
+
+  &__burger-box {}
+
+  &__burger-inner {}
+}

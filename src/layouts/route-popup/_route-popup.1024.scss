@@ -1,0 +1,26 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.route-popup {
+  align-items: center;
+  &__cnt {
+    width: 920px;
+  }
+  &__close {
+    width: 25px;
+    height: 25px;
+  }
+  &__images {
+    margin-top: 15px;
+    flex-flow: row;
+  }
+  &__img {
+    margin: 0 10px 0 0;
+    width: 300px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

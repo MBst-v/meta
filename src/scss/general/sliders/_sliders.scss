@@ -1,0 +1,112 @@
+// assets import
+@import '../../assets/colors';
+@import '../../assets/mixins';
+@import '../../assets/variables';
+.dots {
+  display: flex;
+  justify-content: center;
+  > li {
+    &:nth-last-child(n+2) {
+      margin-right: 14px;
+    }
+  }
+}
+
+li.slick-active > .dot {
+  cursor: default;
+  background: $blue;
+}
+
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  background: $lightblue;
+  transition: background .35s
+}
+
+.slick {
+  &-slider {
+    user-select: none;
+    touch-action: pan-y;
+  }
+  &-list {
+    width: 100%;
+    position: relative;
+    &.draggable {
+      cursor: grab;
+    }
+    &.grabbing {
+      cursor: grabbing;
+    }
+  }
+  &-track {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after,
+    &::before {
+      display: table;
+      content: '';
+    }
+    &::after {
+      clear: both;
+    }
+  }
+  &-dotted {
+    display: flex;
+    flex-direction: column;
+    > .dots {
+      order: 10;
+    }
+  }
+}
+
+.slick-track,
+.slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .5s, color .5s;
+  &_blue {
+    color: $blue;
+  }
+  &_black {
+    color: $black;
+  }
+  &_red {
+    color: $black;
+  }
+  &.slick-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &_prev {
+    > .arrow__svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__svg {
+    pointer-events: none;
+  }
+}
+
+.slider-nav {
+  display: none;
+}
+
+.slick-slider + .slider-nav,
+.slick-slider > .slider-nav {
+  display: flex;
+}

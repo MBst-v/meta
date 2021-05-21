@@ -1,0 +1,214 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.solution-equipments,
+.solution-props,
+.solution-descr,
+.solution-schemes {
+  padding: 80px 0;
+}
+
+.product-props {
+  &__docs {
+    padding: 80px 0 60px;
+  }
+
+  &__table-block {
+    padding: 80px 0;
+  }
+
+  &__table-wrap {}
+
+  &__table {}
+
+  &__functions-and-schemes {
+    padding: 80px 0;
+  }
+
+  &__functions {
+    +.product-props__schemes {
+      margin-left: 100px;
+     }
+  }
+
+  &__schemes {
+
+  }
+
+  &__scheme {}
+}
+
+.product-table {
+
+  &__title {}
+
+  &__hdr {}
+
+  &__tr {}
+
+  &__th {
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+
+  &__body {}
+
+  &__td {
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+}
+
+.solution-equipments {
+  &__title {}
+
+  &__slider {
+    >.slick-list {
+      >.slick-track {}
+    }
+
+    &.slick-slider {
+      >.solution-equipments__nav {}
+    }
+  }
+
+  &__nav {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__product {
+    width: 285px;
+    &:nth-last-child(n+2) {}
+
+    >.product__img {}
+
+    >.product__title {}
+
+    >.product__descr {}
+
+    >.product__link {}
+  }
+}
+
+
+.solution-props {
+}
+
+.solution-schemes {
+
+  &__title-block {
+    margin: 0 0 30px;
+  }
+
+ &__text {
+    flex-basis: 420px;
+    + .solution-schemes__schemes {
+      max-width: 760px;
+      .solution-schemes__scheme {
+        width: 380px;
+        &:only-of-type {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  &__schemes {
+    flex-basis: 760px;
+    >.slick-list {
+      >.slick-track {}
+    }
+
+    &.slick-slider {
+      >.solution-schemes__nav {}
+    }
+  }
+
+  &__scheme {}
+
+  &__nav {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+}
+
+.solution-scheme {
+  width: 550px;
+  &__fig {}
+
+  &__img {}
+
+  &__title {}
+}
+
+.solution-descr {
+  &__title {
+  }
+
+  >.product__p,
+  >.product__ol,
+  >.product__ul {
+    &:last-child {
+    }
+  }
+
+  >.product__p {
+
+    +.product__ol,
+    +.product__ul {
+    }
+  }
+}
+
+.product-docs {
+  &__text {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__files {
+
+    .doc {
+
+      &:last-child {}
+    }
+
+    .doc__img {}
+
+    .doc__text {}
+
+    .doc__title {}
+
+    .doc__size {}
+  }
+}
+
+.product-functions {
+  &__ul {}
+  &__ol {}
+  &__li {}
+}
+
+.product-scheme {
+  &__fig {}
+
+  &__img {}
+
+  &__title {}
+}

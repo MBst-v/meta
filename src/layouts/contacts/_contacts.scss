@@ -1,0 +1,70 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {
+}
+
+.contacts {
+  color: $white;
+  background: $blue;
+  font: 16px/100% Montserrat;
+  &__title {
+    margin: 0 0 30px;
+    font: bold 32px/100% Montserrat;
+  }
+  &__contact {
+    &_tel {
+      margin: 0 0 35px;
+      > .contact__subtitle {
+        color: $lightgrey;
+      }
+    }
+    &_email {
+      margin: 50px 0 50px; 
+    }
+    &_address {
+      max-width: 230px;
+      line-height: 150%;
+    }
+  }
+}
+
+.contacts-form-wrap {
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+
+.contacts-form {
+  position: relative;
+  color: $black;
+  font: 16px/150% Montserrat;
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+  &__descr {
+  }
+  &__field {
+  }
+  &__field_name {
+    margin: 35px 0 0;
+  }
+  &__field_tel,
+  &__field_email,
+  &__field_msg {
+    margin: 30px 0 0;
+  }
+  &__field_email {}
+  &__field_msg {}
+  &__bottom {
+    margin: 15px auto 0;
+    width: 280px;
+  }
+  &__btn {
+    margin: 20px 0 0;
+    width: 280px;
+    height: 50px;
+  }
+}

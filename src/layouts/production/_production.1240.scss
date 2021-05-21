@@ -1,0 +1,84 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.production {
+  &__filter {}
+
+  &__catalogue-wrap {
+    width: 875px;
+  }
+
+  &__title {}
+
+  &__descr {
+    max-width: 715px;
+  }
+
+  &__catalogue {
+    justify-content: flex-start;
+  }
+
+  &__loadmore {
+    margin: 20px 295px 50px auto;
+  }
+
+  &__product {
+    width: calc((875px - 40px) / 3);
+
+    &:nth-child(n) {
+      margin: 0 20px 50px 0;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.product {
+
+  &__img {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__link {}
+}
+
+#filter-open-btn {
+  &::before {}
+}
+
+
+.production {
+  &__filter {
+    margin: 0 25px 0 0;
+  }
+}
+
+.filter {
+  &__cnt {}
+
+  &__close {}
+
+  &__title {}
+
+  &__buttons {}
+
+  &__switch-btn {
+    &.current {}
+  }
+
+  &__categories {}
+
+  &__category {
+    &.current {}
+  }
+
+  &__link {
+    &:first-child {}
+  }
+}

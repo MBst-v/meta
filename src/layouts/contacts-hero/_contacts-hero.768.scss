@@ -1,0 +1,15 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.conacts-hero,
+.w2b-hero {
+  padding-top: 75px;
+  &__title {
+    margin: 0 0 5px;
+    font-size: 28px;
+  }
+
+  &__descr {}
+}

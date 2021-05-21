@@ -1,0 +1,39 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.promo {
+  &__title {
+    width: 590px;
+  }
+
+  &__descr {
+    width: 590px;
+  }
+
+}
+
+.promo-form-wrap {
+  margin: 30px 0 0;
+}
+
+.promo-form {
+
+  &__field_name {
+    width: 415px;
+    >.invalid {}
+  }
+
+  &__field_email {
+    width: 415px;
+    >.invalid {}
+
+  }
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}

@@ -1,0 +1,95 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  display: block;
+  &__gallery {
+    &-img {}
+
+    &-nav {
+      margin: 0;
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: $white;
+      z-index: 1;
+    }
+
+    &-prev {}
+
+    &-next {}
+  }
+
+  &__title {
+    margin: 0 0 35px;
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  &__descr {
+    width: 330px;
+  }
+
+  &__feats {
+    margin: 125px 0 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.about-partners {
+  &__nav {
+    &.slider-nav {
+      display: none;
+    }
+  }
+
+  &__dots {}
+
+  &__prev {}
+
+  &__next {}
+}
+
+#about-partners {
+  display: flex;
+  align-items: center;
+  > .slick-list {
+    margin: auto;
+    // (16px ширина стреки + 40px отступ стрелки + 3px внутренний отступ) * 2
+    max-width: calc(100% - 118px);
+    overflow: hidden;
+  }
+}
+
+#about-gallery {
+  margin: 0;
+  float: right;
+  width: 330px;
+  position: relative;
+}
+
+.feat {
+  flex-basis: 49%;
+  &:nth-last-child(n+2) {
+    margin: 0;
+  }
+  &:nth-last-child(n+3) {
+    margin: 0 0 50px;
+  }
+
+  &__img {}
+
+  &__title {}
+}
+
+.partner {
+  height: 54px;
+}

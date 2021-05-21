@@ -1,0 +1,27 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.hero-404 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  &__img {
+    margin: 0 0 0 auto;
+    max-width: 325px;
+  }
+
+  &__title {}
+
+  &__descr {}
+
+  &__link {}
+}
+
+.ftr {
+  clear: both;
+}

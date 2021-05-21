@@ -1,0 +1,66 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+/* Описание .search-inp частично в interface.scss */
+
+/* Описание .tel частично в interface.scss */
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 344px);
+  left: auto;
+  height: auto;
+  width: 300px;
+  box-shadow: 0px 5px 10px rgba(97, 97, 97, 0.1);
+
+  &__cnt {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__logo-img {}
+
+  &__search-form {
+    display: none;
+  }
+
+  &__tel {
+    display: none;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {}
+
+  &__nav-li {
+    width: 100%;
+    > .nav__link {
+      display: flex;
+      width: 100%;
+      padding: 16px 20px;
+      transition: background .5s, color .5s;
+    }
+    &:nth-last-child(n+2) {
+      margin: 0;
+      border-bottom: 1px solid $lightgrey;
+    }
+    &:nth-child(-n+4) {
+      display: none;
+    }
+    &.current {
+      > .nav__link {
+        border-bottom-color: $lightgrey !important;
+      }
+    }
+  }
+}

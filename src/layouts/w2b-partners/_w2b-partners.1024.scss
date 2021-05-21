@@ -1,0 +1,48 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.partners-sect {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  &__title {
+    margin: 0 0 85px;
+  }
+
+  &__city {}
+
+  &__map {
+    top: responsive('1024->1439', '40->0');
+    right: responsive('1024->1439', '-200->-400');
+    width: responsive('1024->1439', '796->1200');
+    height: auto;
+    max-width: 1500px;
+  }
+}
+
+.partner {
+  &__city {}
+
+  &__block {
+    &:nth-last-child(n+2) {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__title {
+    padding-right: 690px;
+  }
+
+  &__descr {
+    width: calc((100% - 40px) / 3);
+    &:nth-last-child(n+2) {}
+    &:nth-child(n) {
+      margin-right: 15px;
+      margin-left: 0;
+    }
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
+    }
+  }
+}

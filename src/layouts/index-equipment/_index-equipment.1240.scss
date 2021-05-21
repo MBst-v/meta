@@ -1,0 +1,39 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.equipments-sect,
+.solutions-sect {
+  &__title {}
+}
+
+.equipments,
+.solutions {
+  &__link {
+    width: 387px;
+  }
+}
+
+.equipment,
+.solution {
+  width: 387px;
+  &:nth-last-child(3) {
+  }
+  &__title {}
+
+  &__img {
+    // width: 230px;
+    // height: 180px;
+    width: 200px;
+    height: 155px;
+  }
+
+  &__count {
+  }
+}
+
+.solution__img {
+  width: 230px;
+  height: 180px;
+}

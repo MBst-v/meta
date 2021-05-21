@@ -1,0 +1,55 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-cb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: $blue url(#) center/cover;
+}
+
+.container {}
+
+.contacts-cb-form {
+  padding: 30px 20px;
+  background: $white;
+  position: relative;
+
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 20px;
+    font: 16px/140% Montserrat;
+  }
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__field_tel,
+  &__field_email,
+  &__field_msg {
+    margin-top: 35px;
+  }
+
+  &__bottom {
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+
+  &__check {}
+
+  &__btn {
+    margin-top: 15px;
+    width: 240px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,56 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-service {
+  padding-top: 30px;
+  padding-bottom: 75px;
+  font: 16px/140% Montserrat;
+  color: $black;
+  &__title {
+    margin: 0 0 15px;
+    max-width: 300px;
+    font: bold 24px/140% Montserrat;
+    color: $blue;
+  }
+
+  &__descr {
+    margin: 0 0 15px;
+    &:last-of-type {
+      margin: 0 0 40px;
+    }
+  }
+
+  .contact {
+    max-width: 475px;
+    &:last-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  .doc {
+    margin-top: 40px;
+    max-width: 280px;
+    display: flex;
+    &__img {
+      flex-shrink: 0;
+      margin-right: 20px;
+      transition: filter .5s;
+    }
+
+    &__text {}
+
+    &__title {
+      display: block;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &__size {
+      font-size: 12px;
+      line-height: 100%;
+      color: $grey;
+    }
+  }
+}

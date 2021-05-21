@@ -1,0 +1,22 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.w2b-contacts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  column-count: 2;
+  &__title {
+    column-span: all;
+  }
+  &__descr {
+  }
+  &__contacts {
+    break-inside: avoid;
+  }
+  &__map {
+    height: 180px;
+    column-span: all;
+  }
+}

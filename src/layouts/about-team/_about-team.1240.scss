@@ -1,0 +1,31 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.team {
+  padding-bottom: 190px;
+  &__title {}
+}
+
+.char {
+  width: 285px;
+  &__img {}
+
+  &__title {}
+
+  &__pos {}
+}
+
+#team-slider {
+  >.slick-list {}
+}
+
+.team-slider {
+  &__nav {}
+
+  &__prev,
+  &__next {}
+
+  &__next {}
+}

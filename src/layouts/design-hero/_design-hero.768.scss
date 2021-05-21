@@ -1,0 +1,28 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: block;
+  &__img {
+    margin: 142px 0 0 20px;
+    width: 275px;
+    height: 275px;
+    float: right;
+  }
+
+  &__title {
+    font-size: 28px;
+    >.br {}
+  }
+
+  &__descr {
+    margin: 0 0 20px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

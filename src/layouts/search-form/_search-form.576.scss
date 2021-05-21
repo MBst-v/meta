@@ -1,0 +1,9 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.search-result {
+  $top_margin: 32px + 62px + 20px; // Высота инпута, высота и отступ логотипа, padding-top меню
+  max-height: calc(100vh - #{$top_margin});
+}

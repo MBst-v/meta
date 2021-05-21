@@ -1,0 +1,46 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.docs-hero {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  &__title {
+    margin: 0 0 20px;
+    font-size: 28px;
+  }
+
+  &__descr {}
+}
+
+.container {}
+
+.docs-sect {
+  margin-top: 20px;
+  &__title {
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+}
+
+.docs-block {
+}
+
+.doc {
+  width: 334px;
+  max-width: 100%;
+  &__img {
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__text {}
+
+  &__title {
+    font-size: 14px;
+  }
+
+  &__size {}
+}

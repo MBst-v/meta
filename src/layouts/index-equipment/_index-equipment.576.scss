@@ -1,0 +1,43 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.equipments-sect,
+.solutions-sect {
+  &__title {}
+}
+
+.equipments,
+.solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  &__link {
+    width: 258px;
+    &:last-child:nth-child(5) {
+      margin: 20px auto 0;
+    }
+  }
+}
+
+.equipment,
+.solution {
+  width: 258px;
+  // &:nth-child(odd) {
+    // margin-right: 20px;
+  // }
+  // &:nth-of-type(2) {
+    // margin: 0;
+  // }
+  // background-size: 172px 134px;
+  &__title {}
+
+  &__img {
+    width: 172px;
+    height: 134px;
+  }
+
+  &__count {}
+}

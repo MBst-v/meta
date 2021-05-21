@@ -1,0 +1,103 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.double-form-sect {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.double-form-block {
+  padding: 25px 0;
+}
+
+.double-form-wrap {
+  &.is-active {}
+}
+
+.double-form-headings {}
+
+.double-form-title {
+  &:first-child {
+    margin: 0 65px 0 0;
+  }
+
+  &.is-active {
+    &:first-child {}
+  }
+}
+
+.double-form-contacts {
+  margin: 0 0 0 20px;
+  flex-shrink: 0;
+  padding: 35px;
+  width: 300px;
+  column-count: 1;
+  &__title {}
+
+  &__contact_tel {}
+
+  &__contact_support-tel {
+    margin: 0 0 35px;
+  }
+
+  &__contact_email {}
+
+  &__contact_address {}
+}
+
+.order-form,
+.ask-form {
+  &__descr {}
+
+  &__field_name,
+  &__field_tel,
+  &__field_email,
+  &__field_msg {
+    width: 300px;
+  }
+
+  &__bottom {}
+
+  &__btn {}
+}
+
+.order-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}
+
+.ask-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__files-upload-block {
+    >.uploadedfiles {}
+  }
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}

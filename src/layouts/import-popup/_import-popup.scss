@@ -1,0 +1,98 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.import-popup {
+  align-items: center;
+  z-index: 3;
+  color: $black;
+  font: 16px/140% Montserrat;
+  &__cnt {
+    background: $white;
+    position: relative;
+    .btn {
+      margin: 25px auto 0;
+      width: 250px;
+      height: 50px;
+    }
+
+    .popup__title {
+      margin: 0 0 15px;
+      display: block;
+      font: bold 24px/100% Montserrat;
+      color: $blue;
+      text-align: center;
+    }
+    .popup__descr {
+      text-align: center;
+    }
+  }
+
+  &__close {}
+
+  &__notice {
+    display: none;
+  }
+
+  &__count {}
+
+  &__list {
+    font: 16px/140% Montserrat;
+  }
+
+  &__list-title {}
+
+  &__list-inner {}
+
+  &__list-item {
+    margin: 0 0 5px;
+  }
+  &__select {
+    &-block {
+      margin: 0 auto 20px;
+      width: 270px;
+      text-align: left;
+      font: 16px/140% Montserrat;
+    }
+    &-title {
+    }
+  }
+
+  &__check {
+    margin: 0 auto 20px;
+  }
+}
+
+
+.import-stage-1 {}
+
+.import-stage-2 {
+  display: none;
+}
+
+
+.loader {
+  &__inner {}
+}
+
+#import-form-block {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#import-select {
+  width: 100%;
+  appearance: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: block;
+  margin-top: 5px;
+}
+
+#wpadminbar {
+  display: initial !important;
+}

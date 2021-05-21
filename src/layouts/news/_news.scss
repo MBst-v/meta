@@ -1,0 +1,64 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.news-sect {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font: 16px/140% Montserrat;
+  color: $black;
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+  &__descr {
+    margin: 0 0 70px;
+    width: 280px;
+  }
+  &__loadmore {
+    margin: 75px 0 0 15px;
+  }
+  &__loadmore-text {
+  }
+}
+
+.news {
+  will-change: max-height;
+  transition: max-height .5s;
+  overflow: hidden;
+}
+
+.post {
+  display: flex;
+  flex-flow: column;
+  // width: 280px;
+  margin: 0 0 70px;
+  &:last-child {
+    margin: 0;
+  }
+  &__img {
+    width: 100%;
+    height: 280px;
+    margin: 0 0 20px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    margin: 0 0 30px;
+    font: bold 18px/140% Montserrat;
+  }
+  &__descr {
+    margin: 0 0 25px;
+    font: 15px/140% Montserrat;
+    color: $grey;
+  }
+  &__date {
+    margin: 0 0 15px;
+    font: 12px/100% Montserrat;
+    color: $lightgrey;
+  }
+  &__more {
+    font: bold 16px/100% Montserrat;
+  }
+}

@@ -1,0 +1,45 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.promo {
+  &__title {
+    margin: 0 0 20px;
+    font-size: 32px;
+  }
+
+  &__descr {}
+}
+
+.promo-form-wrap {
+  margin: 45px 0 0;
+}
+
+.promo-form {
+  display: flex;
+  flex-wrap: wrap;
+  &__field_name {
+    margin: 0;
+    width: 215px;
+    >.invalid {}
+  }
+
+  &__field_email {
+    margin: 0;
+    width: 215px;
+    >.invalid {}
+
+  }
+
+  &__check {
+    margin: 20px 0 0;
+    max-width: none;
+    order: 10;
+  }
+
+  &__btn {
+    margin: 0;
+    width: 215px;
+  }
+}

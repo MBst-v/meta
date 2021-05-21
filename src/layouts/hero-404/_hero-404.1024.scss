@@ -1,0 +1,25 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.hero-404 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &__img {
+    max-width: 350px;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    width: auto;
+    font-size: 40px;
+  }
+
+  &__descr {
+    margin: 0 0 55px;
+    width: 430px;
+  }
+
+  &__link {}
+}

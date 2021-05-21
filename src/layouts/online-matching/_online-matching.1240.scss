@@ -1,0 +1,141 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.online-matching-sect {
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+.online-matching-block {
+  margin-right: 40px;
+  width: 780px;
+  &__title {
+    margin: 0 0 15px;
+    max-width: 690px;
+  }
+
+  &__descr {
+    max-width: 690px;
+    &:last-of-type {
+      // padding: 0 0 35px;
+    }
+  }
+  &__text {
+    padding: 0 0 35px;
+  }
+}
+
+.online-matching {
+  // margin-top: 35px;
+  &__breadcrumbs {}
+
+  &__steps {}
+
+  &__step-title {}
+
+  &__step-title-number {}
+
+  &__step-title-text {}
+
+  &__step {}
+
+  &__system {}
+
+  &__system-img {}
+
+  &__sytem-text {}
+
+  &__system-title {}
+
+  &__system-descr {}
+
+  &__system-props {}
+
+  &__system-li {}
+
+  &__system-btn {}
+}
+
+.online-matching-contacts {
+  padding: 45px;
+  width: 380px;
+  // height: 380px;
+  height: 420px;
+  // height: 422px;
+  &__title {}
+
+  &__contact {
+    &:nth-last-of-type(n+2) {}
+  }
+
+  &__btn {
+    margin: auto 0 30px 0;
+    width: 300px;
+  }
+
+  &__result-btns {
+    margin: 0;
+    width: 300px;
+    font-size: 16px;
+  }
+}
+
+/* РЕЗУЛЬТАТ */
+.online-matching {
+  &__result {}
+
+  &__result-title {}
+
+  &__result-params {}
+
+  &__result-row {}
+
+  &__resul-row-left {
+    font-size: 16px;
+  }
+
+  &__resul-row-dots {}
+
+  &__resul-row-right {
+    font-size: 16px;
+  }
+
+  &__result-equpiment {}
+
+  &__product {
+    > .product__img {
+      height: 230px;
+    }
+  }
+
+  &__result-docs-schemes {}
+
+  &__result-schemes-title {}
+
+  &__result-schemes-descr {}
+
+  &__result-schemes-docs {
+    .doc {
+      &__img {}
+
+      &__text {}
+
+      &__title {}
+
+      &__size {}
+    }
+  }
+
+  &__result-schemes-scheme {}
+}
+
+#reset-btn {
+  >.reset-arrow {}
+}
+
+#print {
+  >.print-icon {}
+}

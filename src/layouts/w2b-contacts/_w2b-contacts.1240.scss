@@ -1,0 +1,18 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.w2b-contacts {
+  padding-bottom: 80px;
+  grid-template-columns: 520px auto;
+  &__title {
+  }
+  &__descr {
+  }
+  &__contacts {
+  }
+  &__map {
+    width: 410px;
+  }
+}

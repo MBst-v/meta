@@ -1,0 +1,44 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.consult {
+  display: flex;
+
+  &__text {
+    padding: 65px 120px 70px calc(50% - 600px);
+  }
+
+  &__title {
+    line-height: 130%;
+  }
+
+  &__descr {}
+}
+
+.consult-form-wrap {
+  padding: 65px calc(50% - 600px) 35px 65px;
+}
+
+.consult-form {
+  &__field_name {}
+
+  &__field_name,
+  &__field_tel,
+  &__field_email {
+    width: 345px;
+  }
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {
+    width: 345px;
+  }
+}

@@ -1,0 +1,114 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-flow: column;
+  font: 16px/160% Montserrat;
+  color: $black;
+  overflow: hidden;
+
+  &__gallery {
+    &-img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &-nav {
+      margin: 10px auto 0;
+      order: 10;
+      width: 85%;
+      height: 30px;
+      background: $white;
+      justify-content: center;
+    }
+
+    &-prev,
+    &-next {
+      width: 50%;
+      height: 100%;
+      transition: background .5s, fill .5s;
+    }
+
+    &-prev {
+      // margin: 0 50px 0 0;
+    }
+
+    &-next {}
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 30px;
+  }
+
+  &__feats {
+    margin: 50px 0 40px;
+    line-height: 150%;
+  }
+}
+
+.about-partners {
+  &__nav {
+    margin: 40px 0 0;
+    justify-content: center;
+    order: 10;
+  }
+  &__next {
+    margin-right: -5px;
+    padding: 5px;
+  }
+  &__prev {
+    margin-left: -5px;
+    padding: 5px;
+  }
+
+  &__dots {}
+}
+
+#about-partners {
+  order: 10;
+  >.slick-list {
+    padding: 0 3px;
+  }
+}
+
+#about-gallery {
+  margin: 0 auto 85px;
+  width: 280px;
+  overflow: hidden;
+  order: 9;
+}
+
+.feat {
+  display: flex;
+  align-items: center;
+
+  &:nth-last-child(n+2) {
+    margin: 0 0 35px;
+  }
+
+  &__img {
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {}
+}
+
+.partner {
+  padding: 1px;
+  width: 74px;
+  height: 40px;
+  outline-offset: -1px;
+  object-fit: contain;
+}

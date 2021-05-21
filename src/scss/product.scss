@@ -1,0 +1,15 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+// blocks import
+@import '../layouts/product-hero/product-hero';
+@import '../layouts/product-props/product-props';
+@import '../layouts/product-tech-props/product-tech-props';
+@import '../layouts/product-descr/product-descr';
+@import '../layouts/product-functions/product-functions';
+@import '../layouts/product-docs/product-docs';
+@import '../layouts/product-related/product-related';
+@import '../layouts/production/production';
+@import '../layouts/online-matching/online-matching';

@@ -1,0 +1,29 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-flow: column;
+  font: 16px/140% Montserrat;
+  color: $black;
+  &__img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    order: 10;
+  }
+  &__title {
+    margin: 0 0 25px;
+    font: bold 24px/140% Montserrat;
+    > .br {
+      // display: none;
+    }
+  }
+  &__descr {
+    margin: 0 0 25px;
+  }
+}

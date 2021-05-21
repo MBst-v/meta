@@ -1,0 +1,44 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.map-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: $black;
+  font: 16px/150% Montserrat;
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 30px;
+    max-width: 345px;
+  }
+
+  &__list {}
+
+  &__li {}
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 40px;
+  }
+}
+
+.address-map {
+  &__svg {}
+
+  &__i {}
+}
+
+.map-sect__list,
+.map-sect__descr > .link_blue,
+.address-map {
+  display: none;
+}

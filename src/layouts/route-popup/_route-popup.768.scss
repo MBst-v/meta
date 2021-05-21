@@ -1,0 +1,16 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.route-popup {
+  &__cnt {
+  }
+  &__close {
+
+  }
+  &__img {
+    &:last-child {
+    }
+  }
+}

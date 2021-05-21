@@ -1,0 +1,465 @@
+// assets import
+@import '../../assets/colors';
+@import '../../assets/mixins';
+@import '../../assets/variables';
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.product__img.lazy {
+  background: url('../img/img-placeholder.svg');
+}
+
+.product__img.lazyloaded {
+  background: 0 0;
+}
+
+
+
+.hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  background: #f3f3f3;
+  color: #787b7e;
+  font: 9px/140% Montserrat;
+  position: relative;
+  cursor: default;
+  &__text {
+    padding: 10px;
+    flex-shrink: 0;
+    display: block;
+    display: block;
+    position: absolute;
+    background: #f3f3f3;
+    color: #616161;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+  }
+  &__link {
+    display: block;
+    color: $blue;
+    text-decoration: underline;
+  }
+  &:hover > .hint__text {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.breadcrumbs {
+  // display: flex;
+  // align-items: center;
+  // flex-wrap: wrap;
+  font: 11px/140% Montserrat;
+  color: #787b7e;
+  &.lazyloaded {
+    > .breadcrumbs__li::before {
+      background-image: url('../img/icon-arrow-grey.svg');
+    }
+  }
+  &__li {
+    display: inline;
+    line-height: 200%;
+    &:nth-child(n+2) {
+      &::before {
+        content: '';
+        margin: 0 7.5px 0 5px;
+        display: inline-flex;
+        width: 15px;
+        height: 8px;
+        background: center/contain no-repeat;
+      }
+    }
+    &.current {
+      cursor: not-allowed;
+      > .breadcrumbs__link {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .5s;
+    // line-height: 100%;
+  }
+}
+
+a[href="#"] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+html[lang] {
+  margin: 0 !important;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.hdr__burger:focus,
+.btn:focus,
+.check:focus-within,
+  {
+  outline: 1px dotted;
+}
+
+// a[href="http://meta/online-matching/"],
+// a[href="http://meta.boak.ru/online-matching/"] {
+//   opacity: 0.5;
+//   pointer-events: none;
+// }
+
+
+.loadmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+  font: 16px/100% Montserrat;
+  color: $blue;
+  border: 1px solid $blue;
+  background: $white;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+
+/* Видимость элементов */
+/* Видимость регулируется добавлением/удалением классов
+    или по css селекторам */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Видимость элементов */
+
+
+// img.lazy {
+//   background: url('../img/img-placeholder.svg') center/cover no-repeat;
+// }
+
+
+/* Модификаторы для текста */
+.text {
+  &_underline {
+    border-bottom: 1px solid currentColor;
+    transition: border-bottom-color .5s;
+  }
+
+  &_red {
+    color: $red;
+  }
+
+  &_blue {
+    color: $blue;
+  }
+
+  &_white {
+    color: $white;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  transition: text-decoration-color .5s;
+
+  &_blue {
+    color: $blue;
+
+    &:visited {
+      color: $red;
+    }
+  }
+}
+
+/* Модификаторы для текста */
+
+
+/* Секция и ее элементы */
+.sect {
+
+  // Некоторые стили секции ушли в grid.scss (pt, pb)
+  &_bg {}
+
+  &-title {}
+
+  &-descr {}
+}
+
+/* Секция и ее элементы */
+
+
+/* loader */
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  // Видимость регулируется классами .hidden и .visible
+  &__circle {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    animation: spin .5s linear infinite;
+  }
+}
+
+.loader_white {
+  background: rgba(255, 255, 255, 0.9);
+
+  >.loader__circle {
+    border-top-color: $blue;
+    border-left-color: $blue;
+  }
+}
+
+.loader_blue {
+  background: rgba(21, 94, 164, 0.9);
+
+  >.loader__circle {
+    border-top-color: $white;
+    border-left-color: $white;
+  }
+}
+
+.loader_lightblue {
+  background: rgba(214, 226, 235, 0.9);
+
+  >.loader__circle {
+    border-top-color: $blue;
+    border-left-color: $blue;
+  }
+}
+
+.loading>.loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* loader */
+
+
+/* Встроенное в форму окно спасибо */
+
+.thanks {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  font: 16px/150% Montserrat;
+  text-align: center;
+
+  // Видимость регулируется классами .hidden и .visible
+  &__cnt {}
+
+  &__title {
+    display: block;
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &__descr {}
+}
+
+.thanks_white {
+  background: rgba(255, 255, 255, 0.9);
+  color: $black;
+
+  >.thanks__title {
+    color: $blue;
+  }
+}
+
+.thanks_blue {
+  background: rgba(21, 94, 164, 0.9);
+  color: $white;
+
+  >.thanks__title {
+    color: $white;
+  }
+}
+
+.thanks_lightblue {
+  background: rgba(214, 226, 235, 0.9);
+  color: $grey;
+
+  >.thanks__title {
+    color: $blue;
+  }
+}
+
+.sent>.thanks {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Встроенное в форму окно спасибо */
+
+
+/* Блок .contact */
+// Есть блок contact,
+// который может содержать:
+// текст сверху, ссылку/текст, текст снизу
+// contact
+//  > contact__suptitle
+//  > contact__tel/__email/__address and etc
+//  > contact__subtitle
+
+// Он может быть contact_tel/_email and etc
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  &__suptitle {
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    margin: 3px 0 0;
+    font-size: calc(1em - 3px);
+    color: $grey;
+  }
+}
+
+/* Блок .contact */
+
+
+
+/* Модификаторы для контактов .tel, .email and etc */
+.tel,
+.email {
+  transition: color .5s;
+}
+
+.tel_blue {
+  // font-weight: 600;
+}
+
+.tel_white,
+.email_white {
+  transition: text-shadow .5s;
+}
+
+.tel_blue::before {
+  content: url('../img/icon-tel-blue.svg');
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.tel_red::before,
+.tel_white::before {
+  margin: 0 10px 0 0;
+  content: '';
+  width: 12px;
+  height: 12px;
+}
+
+.email_blue::before,
+.email_red::before,
+.email_white::before {
+  margin: 0 9px 0 0;
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  background: center/contain no-repeat;
+}
+
+.address {
+  display: flex;
+  line-height: 150%;
+}
+
+.address_red::before,
+.address_white::before {
+  margin: 0 13px 0 0;
+  content: '';
+  width: 9px;
+  height: 12px;
+}
+
+/* Модификаторы для контактов .tel, .email and etc */
+
+
+/* Поле contact form 7 honeypot */
+.cf7-form-field {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+/* Поле contact form 7 honeypot */
+
+
+#fake-scrollbar {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 9999;
+
+  &.active {
+    display: block;
+  }
+}
+
+.hdr__nav-li,
+.ftr__nav-li,
+.menu__nav-li {
+  &.current {
+    // cursor: not-allowed;
+    >.nav__link {
+      // pointer-events: none;
+      color: $blue;
+      border-bottom: 1px solid !important;
+    }
+  }
+}
+
+
+div.wpcf7-response-output,
+span.wpcf7-not-valid-tip,
+.screen-reader-response,
+#wpadminbar {
+  display: none !important;
+}

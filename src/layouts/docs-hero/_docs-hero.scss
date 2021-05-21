@@ -1,0 +1,76 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.docs-hero {
+  padding-top: 45px;
+  padding-bottom: 10px;
+  font: 16px/140% Montserrat;
+  color: $black;
+
+  &__title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &__descr {}
+}
+
+.container {}
+
+.docs-sect {
+  margin-top: 10px;
+  &:first-of-type {
+    margin-top: 60px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font: 600 18px/140% Montserrat;
+    color: $blue;
+  }
+}
+
+.docs-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.doc {
+  margin: 0 0 40px;
+  max-width: 375px;
+  display: flex;
+  align-items: flex-start;
+  &[href="#"] {
+    pointer-events: none;
+  }
+  &__img {
+    flex-shrink: 0;
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+    transition: filter .5s;
+    object-fit: contain;
+  }
+
+  &__text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    font: 13px/140% Montserrat;
+    color: $black;
+    text-decoration: underline transparent;
+    transition: text-decoration-color .5s;
+  }
+
+  &__size {
+    font: 12px/100% Montserrat;
+    color: $grey;
+  }
+}

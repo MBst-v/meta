@@ -1,0 +1,174 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.online-matching-sect {
+  padding-bottom: 60px;
+}
+
+.online-matching-block {
+  &__title {}
+
+  &__descr {
+    &:nth-last-of-type(n+2) {}
+  }
+}
+
+.online-matching {
+  &__breadcrumbs {}
+
+  &__steps {}
+
+  &__step-title {}
+
+  &__step-title-number {}
+
+  &__step-title-text {}
+
+  &__step {}
+
+  &__system {}
+
+  &__system-img {}
+
+  &__sytem-text {}
+
+  &__system-title {}
+
+  &__system-descr {}
+
+  &__system-props {}
+
+  &__system-li {}
+
+  &__system-btn {}
+
+  /* STEP 2 */
+  &__step-form {}
+
+  &__radio {
+    &:focus-within {}
+
+    &:nth-last-of-type(n+2) {}
+  }
+
+  &__radio-inp {
+    &:focus {}
+
+    &:checked {}
+  }
+
+  &__radio-text {}
+
+  &__radio-hint {
+    margin: 0 auto 0 10px;
+    >.hint__text {
+      width: 300px;
+      bottom: auto;
+      top: 150%;
+      right: auto;
+      left: 100%;
+    }
+  }
+
+  &__buttons {
+    margin-top: 35px;
+  }
+
+  &__submit {
+    
+  }
+
+  &__submit-svg {}
+}
+
+#alert-type-form {}
+
+.alert-type-form {
+  &__radio {}
+
+  &__btn {}
+}
+
+.online-matching-contacts {
+  margin: 0;
+  padding: 35px 45px;
+  width: 100%;
+
+  &__title {}
+
+  &__contact {
+    &:nth-last-of-type(n+2) {}
+  }
+
+  &__btn {}
+}
+
+/* РЕЗУЛЬТАТ */
+.online-matching {
+  &__result {}
+
+  &__result-title {}
+
+  &__result-params {}
+
+  &__result-row {}
+
+  &__resul-row-left {}
+
+  &__resul-row-dots {}
+
+  &__resul-row-right {}
+
+  &__result-equpiment-block {}
+
+  &__result-equpiment-title {
+    margin: 0 0 40px;
+    width: auto;
+  }
+
+  &__result-equpiment {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  &__product {
+    width: calc((100% - 20px) / 2);
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+    > .product__img {
+      height: 180px;
+    }
+  }
+
+  &__result-docs-schemes {}
+
+  &__result-docs-schemes-title {}
+
+  &__result-docs-schemes-descr {}
+
+  &__result-docs {
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    > .doc-wrap {
+      width: calc((100% - 20px) / 2);
+      // &:nth-child(odd) {
+        // margin-right: auto;
+      // }
+    }
+    .doc {
+      &__img {}
+
+      &__text {}
+
+      &__title {}
+
+      &__size {}
+    }
+  }
+
+  &__result-schemes-scheme {}
+}

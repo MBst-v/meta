@@ -1,0 +1,58 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.index-hero {
+  .slick-track {
+  }
+  &__slide {
+    // padding: 120px calc(50vw - 557px) 130px;
+    padding: 120px calc(50vw - 542px) 130px;
+    &[data-id="slide-help"] {
+      >.index-hero__title {
+        // max-width: 400px;
+      }
+
+      >.index-hero__descr {
+        max-width: 500px;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 640px;
+    font-size: 42px;
+  }
+
+  &__descr {
+    max-width: 500px;
+  }
+
+  &__btn {
+  }
+
+  &__nav {
+    left: calc(50vw - 600px);
+  }
+  &__arrows {
+    width: 1200px;
+    left: calc(50vw - 600px);
+    .arrow__svg {
+    }
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+
+  &__img {
+    right: calc(50vw - 557px);
+    width: 550px;
+  }
+}

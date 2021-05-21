@@ -1,0 +1,18 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.conacts-hero,
+.w2b-hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $black;
+  font: 16px/140% Montserrat;
+  &__title {
+    margin: 0 0 20px;
+    font: bold 24px/140% Montserrat;
+  }
+  &__descr {
+  }
+}

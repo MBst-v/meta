@@ -1,0 +1,27 @@
+// assets import
+@import 'assets/animations';
+@import 'assets/fonts';
+@import 'assets/grid';
+@import 'assets/reset';
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+// blocks import
+@import 'general/buttons/buttons';
+@import 'general/popups/popups';
+@import 'general/sliders/sliders';
+@import 'general/forms/forms';
+@import 'general/interface/interface';
+@import '../layouts/search-form/search-form';
+@import '../layouts/header/header';
+@import '../layouts/mobile-menu/mobile-menu';
+@import '../layouts/map/map';
+@import '../layouts/contacts/contacts';
+@import '../layouts/double-form/double-form';
+@import '../layouts/footer/footer';
+@import '../layouts/import-popup/import-popup';
+@import '../layouts/consult-popup/consult-popup';
+@import '../layouts/order-popup/order-popup';
+
+@import 'general/lazyloaded/lazyloaded';

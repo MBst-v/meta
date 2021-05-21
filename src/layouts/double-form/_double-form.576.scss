@@ -1,0 +1,126 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.double-form-sect {}
+
+.double-form-block {}
+
+.double-form-wrap {
+  margin-top: 30px;
+  &.is-active {}
+}
+
+.double-form-headings {
+  flex-flow: row;
+  font-size: 26px;
+}
+
+.double-form-title {
+  &:first-child {
+    margin: 0 25px 0 0;
+  }
+
+  &.is-active {
+    &:first-child {}
+  }
+}
+
+.double-form-contacts {
+  margin: 50px 0 0 0;
+  width: 100%;
+  column-count: 2;
+  column-gap: 30px;
+  &__title {
+    margin: 0 0 40px;
+    column-span: all;
+  }
+
+  &__contact_tel,
+  &__contact_address,
+  &__contact_email {
+    margin: 0 0 35px;
+    break-inside: avoid;
+  }
+
+  &__contact_support-tel {
+    margin: 0;
+  }
+
+  &__contact_email {
+  }
+
+  &__contact_address {
+    margin: 0;
+    width: 230px;
+  }
+}
+
+.order-form,
+.ask-form {
+  &__descr {
+    width: auto;
+  }
+
+  &__field_name,
+  &__field_tel,
+  &__field_email,
+  &__field_msg {}
+
+  &__bottom {}
+
+  &__btn {}
+}
+
+.order-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}
+
+.ask-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__files-upload-block {
+    >.uploadedfiles {}
+  }
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}
+
+.dnd-upload-details {
+   position: relative;
+  > .has-error {
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+  }
+}
+
+.dnd-upload-status {
+  margin-right: 20px;
+  display: inline-block;
+}

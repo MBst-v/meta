@@ -1,0 +1,42 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-page {
+  padding-top: 40px;
+  grid-template-columns: 666px auto;
+  &__title {
+    margin: 0 0 15px;
+  }
+
+  &__descr {
+    > br {
+      display: block;
+    }
+    > br:nth-child(2) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    margin: 20px 0;
+    >.contact {
+      &:nth-last-child(n+2) {}
+    }
+  }
+
+  &__map {
+    grid-row: 1/span 4;
+    width: 405px;
+    // height: 100%;
+  }
+}
+
+.contact {
+  &__subtitle {}
+
+  &__suptitle {}
+}
+
+.working-hours {}

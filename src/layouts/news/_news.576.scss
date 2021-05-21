@@ -1,0 +1,40 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.news-sect {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__title {}
+
+  &__descr {
+    width: 320px;
+  }
+
+  &__loadmore {
+    margin: 75px 0 0 35px;
+  }
+
+  &__loadmore-text {}
+}
+
+.news {
+}
+
+.post {
+  // width: 320px;
+  &:nth-child(2n) {
+  }
+  &:last-child {}
+
+  &__img {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__date {}
+
+  &__more {}
+}

@@ -1,0 +1,65 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.order-popup {
+  &__cnt {
+    padding: 20px;
+    max-width: 500px;
+  }
+
+  &__close {
+    // margin-left: auto;
+    // display: block;
+    // width: 20px;
+    // height: 20px;
+    // object-fit: contain;
+  }
+}
+
+.order-popup__form {
+  position: relative;
+  color: $black;
+  font: 14px/150% Montserrat;
+
+  &-title {
+    margin: 0 0 15px;
+    font: bold 24px/100% Montserrat;
+  }
+
+  &-descr {
+    margin: 0 0 15px;
+  }
+
+  &-field_name,
+  &-field_tel,
+  &-field_email,
+  &-field_msg {
+    margin: 0 0 25px;
+  }
+
+  &-field_name {}
+
+  &-field_tel {}
+
+  &-field_email {}
+
+  &-field_msg {}
+
+  &-bottom {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    width: 83%;
+    max-width: 280px;
+  }
+
+  &-check {}
+
+  &-btn {
+    margin: 15px auto 0;
+    width: 210px;
+    height: 45px;
+  }
+}

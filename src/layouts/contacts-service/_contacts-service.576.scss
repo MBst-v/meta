@@ -1,0 +1,29 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-service {
+  
+  &__title {
+    
+  }
+
+  &__descr {
+    &:last-of-type {}
+  }
+
+  .contact {
+    &:last-of-type {}
+  }
+
+  .doc {
+    &__img {}
+
+    &__text {}
+
+    &__title {}
+
+    &__size {}
+  }
+}

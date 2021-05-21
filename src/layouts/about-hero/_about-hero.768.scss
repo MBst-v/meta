@@ -1,0 +1,61 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  display: block;
+  padding-top: 75px;
+
+  &__gallery-img {}
+
+  &__gallery-nav {
+    width: 145px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__gallery-prev,
+  &__gallery-next {
+    padding: 0;
+  }
+
+  &__gallery-next {
+    // margin-left: 30px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 28px;
+  }
+
+  &__text {}
+
+  &__descr {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__feats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+#about-gallery {
+  margin: 48px 0 0 20px;
+  // width: 285px;
+  float: right;
+  position: relative;
+}
+
+.feat {
+  width: 326px;
+  align-items: center;
+
+  &__img {}
+
+  &__title {}
+}

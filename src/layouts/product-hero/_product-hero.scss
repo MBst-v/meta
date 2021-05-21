@@ -1,0 +1,272 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.product {
+  &__breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  &__ul {
+    >.product__li::before {
+      content: '';
+      margin: 0 8px 0 0;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      vertical-align: middle;
+      background: $blue;
+    }
+  }
+
+  &__ol {
+    counter-reset: product-list 0;
+
+    >.product__li {
+      counter-increment: product-list;
+      content: counter(product-list) ". ";
+      margin: 0 8px 0 0;
+      display: inline-block;
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+
+  &__li {
+    &:nth-last-child(n+2) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__p,
+  &__ul,
+  &__ol {
+    margin: 0 0 25px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__p {
+    +.product__ol,
+    +.product__ul {
+      margin-top: -15px;
+    }
+  }
+}
+
+.product-hero {
+  // padding-top: 40px;
+  padding-bottom: 40px;
+  font: 16px/140% Montserrat;
+  color: $black;
+  overflow: hidden;
+
+  a:not([class]) {
+    color: $blue;
+    text-decoration: underline;
+    transition: text-decoration-color .5s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  p:not([class]) {
+    display: inline;
+  }
+
+  &__gallery {
+    margin: 0 0 35px;
+  }
+
+  &__text {}
+
+  &__title {
+    margin: 0 0 15px;
+    font: bold 22px/140% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 30px;
+
+    +.product-hero__ul,
+    +.product-hero__ol {
+      margin-top: -20px;
+    }
+  }
+
+  &__list {
+    margin: 0 0 30px;
+    max-width: 455px;
+  }
+
+  &__list-title {
+    margin: 0 0 12px;
+    display: block;
+  }
+
+  &__ul {
+    margin: 0 0 30px;
+
+    >.product-hero__li {
+      &::before {
+        content: '';
+        margin: 0 8px 0 0;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        vertical-align: middle;
+        background: $blue;
+      }
+    }
+  }
+
+  &__ol {
+    margin: 0 0 30px;
+    counter-reset: product-hero-list 0;
+
+    >.product-hero__li {
+      &::before {
+        counter-increment: product-hero-list;
+        content: counter(product-hero-list) ". ";
+        margin: 0 8px 0 0;
+        display: inline-block;
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__li {
+    &:nth-last-child(n+2) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__btn {
+    margin: auto;
+    display: block;
+    width: 235px;
+    height: 45px;
+  }
+}
+
+.product-gallery {
+  &__slide {
+    padding: 0 responsive('320->575', '30->60');
+    display: flex;
+    align-items: center;
+    outline-offset: -1px;
+  }
+
+  &__img {
+    width: 100%;
+    pointer-events: none;
+    object-fit: contain;
+  }
+
+  &__prev,
+  &__next {
+    fill: $black;
+  }
+
+  &__prev {}
+
+  &__next {
+    margin-left: 50px;
+  }
+}
+
+// Основной слайдер
+// Сжимаем все и прижимаем вверх, чтобы работал adaptiveHeight
+#product-gallery-slides.slick-slider {
+  display: flex;
+  align-items: flex-start;
+
+  >.slick-list {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    will-change: height;
+
+    >.slick-track {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  +#product-gallery-arrows {
+    display: flex;
+  }
+}
+
+// Блок стрелок
+#product-gallery-arrows {
+  margin: 20px 0 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+// Мини-слайдер с навигацией по 4 слайда
+#product-gallery-nav {
+  display: none;
+
+  &.slick-slider {
+    display: flex;
+
+    >.slick-list {
+      overflow: hidden;
+      transition: height .5s;
+      will-change: height;
+
+      >.slick-track {}
+    }
+  }
+
+  .slick-track {
+    margin-left: 0;
+  }
+
+  .product-gallery__slide {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: border-color .5s;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &.active {
+      border-color: $blue;
+    }
+  }
+
+  .product-gallery__img {
+    // object-fit: contain;
+  }
+}
+
+
+.product-hero.solutions {
+  #product-gallery-slides {
+    .product-gallery__slide:first-child {
+      // padding: 0;
+      position: relative;
+      .product-gallery__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // height: 100%;
+        height: responsive('320->575', '147->277');
+        object-fit: cover;
+      }
+    }
+  }
+}

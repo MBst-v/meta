@@ -1,0 +1,25 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.route-popup {
+  &__cnt {
+  }
+  &__close {
+    margin-left: auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  &__images {
+    display: flex;
+    flex-flow: column;
+  }
+  &__img {
+    margin: 15px auto 0;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

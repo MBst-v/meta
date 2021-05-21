@@ -1,0 +1,273 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.product-props {
+  &__docs {
+    padding: 60px 0 40px;
+  }
+
+  &__table-block {
+    padding: 60px 0;
+  }
+
+  &__table-wrap {}
+
+  &__table {}
+
+  &__functions-and-schemes {
+    padding: 60px 0;
+  }
+
+  &__functions {}
+
+  &__schemes {
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  &__scheme {}
+}
+
+.product-table {
+  font-size: 16px;
+  line-height: 140%;
+
+  &__title {}
+
+  &__hdr {}
+
+  &__tr {}
+
+  &__th {
+    font-size: 16px;
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+
+  &__body {}
+
+  &__td {
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+}
+
+.solution-equipments {
+  padding: 60px 0;
+  &__title-block {
+    margin: 0 0 50px;
+    display: flex;
+    align-items: center;
+    >.solution-equipments__nav {
+      margin: 0 0 0 auto;
+      display: flex;
+      width: auto;
+    }
+  }
+
+  &__title {
+    // flex-shrink: 0;
+  }
+
+  &__slider {
+    max-width: none;
+    display: flex;
+    > .slick-list {
+      > .slick-track {
+      }
+    }
+    &.slick-slider {
+      > .solution-equipments__nav {
+        display: none;
+      }
+    }
+  }
+
+  &__nav {
+  }
+
+  &__prev,
+  &__next {
+  }
+
+  &__prev {
+  }
+
+  &__next {
+  }
+
+  &__product {
+    width: 216px;
+    &:nth-last-child(n+2) {
+    }
+    >.product__img {
+    }
+
+    >.product__title {}
+
+    >.product__descr {}
+
+    >.product__link {}
+  }
+}
+
+.solution-props {
+  padding: 60px 0;
+  &__title {
+  }
+  > .product__p {
+    + .product__ul,
+    + .product__ol {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      > .product__li {
+        width: 48%;
+      }
+      // column-count: 2;
+    }
+  }
+}
+
+.solution-descr {
+  padding: 60px 0;
+  // !!! Если делать 2 колонки, то нужно поменять все нижние отступы в блоке на верхние
+  column-count: 2;
+  &__title {
+    column-span: all;
+  }
+
+  >.product__p,
+  >.product__ol,
+  >.product__ul {
+    break-inside: avoid;
+    &:last-child {
+    }
+  }
+
+  >.product__p {
+
+    +.product__ol,
+    +.product__ul {
+    }
+  }
+}
+
+.solution-schemes {
+  padding: 60px 0;
+  &__title-block {
+    margin: 0 0 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    > .solution-schemes__nav {
+      margin: 0 0 0 auto;
+      display: flex;
+    }        
+  }
+  &__title {
+  }
+  &__text {}
+  &__schemes {
+    > .slick-list {
+      > .slick-track {
+      }
+    }
+    &.slick-slider {
+      > .solution-schemes__nav {
+        display: none;
+      }
+    }
+  }
+
+  &__scheme {
+  }
+
+  &__nav {
+  }
+  &__prev,
+  &__next {
+  }
+  &__prev {
+  }
+  &__next {
+  }
+}
+
+.solution-scheme {
+  width: 334px;
+  &:only-of-type {
+    width: 100%;
+  }
+  &__fig {
+  }
+  &__img {
+  }
+  &__title {
+  }
+}
+
+.product-docs {
+  &__text {
+    margin: 0 0 45px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+  }
+
+  &__descr {}
+
+  &__files {
+
+    .doc {}
+
+    .doc-wrap {
+      width: 222px;
+
+      &:nth-child(n) {
+        margin-right: 10px;
+      }
+
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+
+    .doc__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .doc__text {}
+
+    .doc__title {}
+
+    .doc__size {}
+  }
+}
+
+.product-functions {
+  &__ul {}
+
+  &__ol {}
+
+  &__li {}
+}
+
+.product-scheme {
+  &__fig {}
+
+  &__img {}
+
+  &__title {
+    margin: 25px;
+  }
+}

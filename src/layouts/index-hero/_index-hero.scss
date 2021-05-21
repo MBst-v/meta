@@ -1,0 +1,90 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.index-hero {
+  display: flex;
+  flex-flow: column;
+  font: 18px/140% Montserrat;
+  color: $black;
+  position: relative;
+  overflow: hidden;
+  background: #F2F1F1;
+  &__slide {
+    padding: 70px 20px;
+    display: flex;
+    flex-flow: column;
+    background: center/cover;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    // font: bold 34px/140% Montserrat;
+    font: bold 30px/140% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 60px;
+    // width: 205px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 50px;
+  }
+
+  &__nav,
+  &__arrows {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+  &__arrows {
+    // z-index: 1;
+  }
+
+  &__prev,
+  &__next {
+    margin: 0 0 -5px -5px;
+    padding: 5px;
+    transition: color .5s;
+  }
+
+  &__prev {
+  }
+
+  &__next {
+    margin: 0 -5px -5px 0;
+  }
+
+  &__arrows {
+  }
+
+  &__dots {
+    .dot {
+      background: #D5D4D0;
+    }
+    > li.slick-active > .dot {
+      background: $red;
+    }
+  }
+
+  &__img {
+    display: none;
+  }
+}

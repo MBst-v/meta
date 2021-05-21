@@ -1,0 +1,86 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.equipments-sect,
+.solutions-sect {
+
+  &__title {
+    margin: 0 0 20px;
+    font: bold 24px/100% Montserrat
+  }
+}
+
+.equipments-sect {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+
+.solutions-sect {
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+
+.equipments,
+.solutions {
+  font: 16px/100% Montserrat;
+  color: $grey;
+
+  &__link {
+    // width: 280px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    display: block;
+    font: bold 20px/140% Montserrat;
+    text-align: center;
+    // text-decoration: underline;
+    // transition: text-decoration-color .5s;
+    &-text {
+      border-bottom: 1px solid;
+      transition: border-bottom-color .5s;
+    }
+  }
+}
+
+.equipment,
+.solution {
+  margin: 0 0 20px;
+  padding: 20px;
+  // width: 280px;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #F2F1F1;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .5s, border-color .5s;
+  // background: right -1px bottom -1px/180px 140px no-repeat;
+  &__title {
+    margin: 0 0 auto 0;
+    max-width: 200px;
+    font-size: 17px;
+    line-height: 140%;
+    color: $black;
+    position: relative;
+    z-index: 1;
+    text-decoration: underline transparent;
+    transition: text-decoration-color .5s;
+  }
+
+  &__img {
+    position: absolute;
+    right: -1px;  // чтобы ушел под рамку
+    bottom: -1px; // чтобы ушел под рамку
+    width: 180px;
+    height: 135px;
+    object-fit: contain;
+    z-index: 0;
+  }
+
+  &__count {
+    position: relative;
+    z-index: 1;
+  }
+}

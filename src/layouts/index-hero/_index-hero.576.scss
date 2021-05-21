@@ -1,0 +1,48 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.index-hero {
+  &__slide {
+    // padding: 70px calc(50vw - 240px) 100px;
+    padding: 70px calc(50vw - 268px) 100px;
+  }
+
+  &__title {
+    font-size: 34px;
+  }
+
+  &__descr {
+  }
+
+  &__btn {
+  }
+
+  &__nav {
+  }
+
+  &__arrows {
+    padding: 0;
+    width: 536px;
+    left: calc(50vw - 268px);
+    // top: 50%;
+    // transform: translateY(-50%);
+    .arrow__svg {
+      width: 10px;
+      height: 20px;
+    }
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+
+  &__img {
+  }
+}

@@ -1,0 +1,149 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.map-sect {
+  padding-bottom: 160px;
+
+  &__title {}
+
+  &__descr {}
+
+  &__list {}
+
+  &__li {}
+
+  &__link {}
+}
+
+.address-map {
+  &__img {
+    max-width: 1500px;
+    max-height: 672px;
+  }
+
+  &__city {
+    &:hover,
+    &.hover {
+      > .address-map__i {
+        transform: scale(1.25);
+      }
+    }
+    &#spb {
+      top: responsive('1440->1920', '120->140');
+      left: responsive('1440->1920', '195->280');
+    }
+
+    &#msk {
+      top: responsive('1440->1920', '215->250');
+      left: responsive('1440->1920', '165->250');
+    }
+
+    &#voronez {
+      top: responsive('1440->1920', '280->325');
+      left: responsive('1440->1920', '120->200');
+    }
+
+    &#kazan {
+      top: responsive('1440->1920', '305->355');
+      left: responsive('1440->1920', '245->340');
+    }
+
+    &#perm {
+      top: responsive('1440->1920', '305->355');
+      left: responsive('1440->1920', '305->410');
+    }
+
+    &#ekb {
+      top: responsive('1440->1920', '335->390');
+      left: responsive('1440->1920', '345->455');
+    }
+
+    &#tmn {
+      top: responsive('1440->1920', '365->425');
+      left: responsive('1440->1920', '370->480');
+    }
+
+    &#novosib {
+      top: responsive('1440->1920', '450->525');
+      left: responsive('1440->1920', '495->630');
+    }
+
+    &#krasnoyarsk {
+      top: responsive('1440->1920', '450->525');
+      left: responsive('1440->1920', '580->730');
+    }
+
+    &#irkutsk {
+      top: responsive('1440->1920', '510->590');
+      left: responsive('1440->1920', '690->860');
+    }
+
+    &#kaliningrad {
+      top: responsive('1440->1920', '115->135');
+      left: responsive('1440->1920', '35->100');
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .address-map {
+  &__city {
+    &#spb {
+      top: 140px;
+      left: 280px;
+    }
+
+    &#msk {
+      top: 250px;
+      left: 250px;
+    }
+
+    &#voronez {
+      top: 325px;
+      left: 200px;
+    }
+
+    &#kazan {
+      top: 355px;
+      left: 340px;
+    }
+
+    &#perm {
+      top: 355px;
+      left: 410px;
+    }
+
+    &#ekb {
+      top: 390px;
+      left: 455px;
+    }
+
+    &#tmn {
+      top: 425px;
+      left: 480px;
+    }
+
+    &#novosib {
+      top: 525px;
+      left: 630px;
+    }
+
+    &#krasnoyarsk {
+      top: 525px;
+      left: 730px;
+    }
+
+    &#irkutsk {
+      top: 590px;
+      left: 860px;
+    }
+
+    &#kaliningrad {
+      top: 135px;
+      left: 100px;
+    }
+  }
+}
+}

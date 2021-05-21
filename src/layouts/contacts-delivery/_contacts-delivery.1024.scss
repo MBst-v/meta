@@ -1,0 +1,16 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-delivery {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {}
+
+  &__descr {
+    max-width: 460px;
+  }
+}
+
+.container {}

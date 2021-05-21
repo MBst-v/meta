@@ -1,0 +1,83 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+/* Описание .search-inp частично в interface.scss */
+
+/* Описание .tel частично в interface.scss */
+
+.hdr {
+
+  &.fixed {
+    .hdr__logo-img {
+      width: 134px;
+    }
+
+    >.hdr__top {
+      .hdr__tel {
+        font-size: calc(1em + 2px);
+      }
+    }
+    > .hdr__bottom {
+      margin: 0;
+      > .hdr__burger {
+        display: inline-flex;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &__top {}
+
+  &__logo {}
+
+  &__logo-img {}
+
+  &__bottom {
+    height: 61px; // 60px + 1px border
+  }
+
+  &__nav {
+
+    &-list {}
+
+    &-li {
+      >.nav__link {
+        // Стили переехали в footer.scss
+      }
+
+      &:nth-child(n+5) {}
+    }
+  }
+
+  &__tel {
+    font-size: 18px;
+
+    &::before {}
+  }
+
+  &__search-form {
+    &.show-list {
+      width: 500px;
+    }
+    > .search-result {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+
+
+  &__burger {
+    margin-left: 105px;
+  }
+
+  &__burger-box {}
+
+  &__burger-inner {}
+}
+
+.hdr__top,
+.hdr__bottom,
+.hdr__nav-list {}

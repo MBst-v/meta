@@ -1,0 +1,22 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.related-products {
+  &__title {}
+
+  &__link {}
+
+  &__wrap {}
+
+  &__product {
+    // Регулируем высоту и ширину с помощью font-size
+    margin-right: 40px;
+    font-size: 285px;
+    > .product__img {}
+    > .product__title {}
+    > .product__descr {}
+    > .product__link {}
+  }
+}

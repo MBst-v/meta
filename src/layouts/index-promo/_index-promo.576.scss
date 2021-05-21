@@ -1,0 +1,35 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.promo {
+  &__title {}
+
+  &__descr {}
+}
+
+.promo-form-wrap {}
+
+.promo-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__field_name {
+    width: 260px;
+    >.invalid {}
+  }
+
+  &__field_email {
+    margin: 0;
+    width: 260px;
+    >.invalid {}
+
+  }
+
+  &__check {
+    margin: 10px auto 0;
+  }
+
+  &__btn {}
+}

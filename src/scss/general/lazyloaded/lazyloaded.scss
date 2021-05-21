@@ -1,0 +1,44 @@
+.lazyloaded {
+  // .tel_blue::before {
+  //   content: url('../img/icon-tel-blue.svg');
+  // }
+
+  .tel_red::before {
+    content: url(../img/icon-tel-red.svg);
+  }
+
+  .tel_white::before {
+    content: url('../img/icon-tel-white.svg');
+  }
+
+  .email_blue::before {
+    background-image: url('../img/icon-email-blue.svg');
+  }
+
+  .email_red::before {
+    background-image: url('../img/icon-email-red.svg');
+  }
+
+  .email_white::before {
+    background-image: url('../img/icon-email-white.svg');
+  }
+
+  .address_red::before {
+    content: url('../img/icon-geo-red.svg');
+  }
+
+  .address_white::before {
+    content: url('../img/icon-geo-white.svg');
+  }
+
+  .check_tick > .check__inp {
+    background-image: url('../img/check.svg');
+  }
+  .check_white > .check__inp  {
+    background-image: url('../img/check-blue.svg');
+  }
+
+  .fileupload__label::before {
+    background-image: url('../img/icon-paper-clip.svg');
+  }
+}

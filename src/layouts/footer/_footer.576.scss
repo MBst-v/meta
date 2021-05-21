@@ -1,0 +1,36 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect ~ .ftr {
+  margin-top: 0;
+}
+
+.ftr {
+  &__logo {}
+
+  &__logo-img {}
+
+  &__copyright {}
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {
+    column-count: 3;
+  }
+
+  &__nav-li {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__bottom {}
+
+  &__policy {}
+
+  &__dev {}
+
+  &__dev-link {}
+}

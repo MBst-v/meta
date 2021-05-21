@@ -1,0 +1,200 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.product-props {
+
+  &__docs {}
+
+  &__table-wrap {}
+
+  &__table {}
+
+  &__functions-and-schemes {}
+
+  &__functions {}
+
+  &__schemes {}
+
+  &__scheme {}
+}
+
+.solution-equipments {
+  &__title {}
+
+  &__slider {
+    >.slick-list {
+      >.slick-track {}
+    }
+
+    &.slick-slider {
+      >.solution-equipments__nav {}
+    }
+  }
+
+  &__nav {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__product {
+    &:nth-last-child(n+2) {}
+
+    >.product__img {}
+
+    >.product__title {}
+
+    >.product__descr {}
+
+    >.product__link {}
+  }
+}
+
+.product-table {
+
+  &__title {}
+
+  &__hdr {}
+
+  &__tr {}
+
+  &__th {
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+
+  &__body {}
+
+  &__td {
+
+    &:first-child {}
+
+    &:last-child {}
+  }
+}
+
+.solution-props {
+  &__title {
+    margin: 0 0 30px;
+  }
+
+  >.product__p {
+    margin: 0 0 20px;
+
+    +.product__ul,
+    +.product__ol {}
+  }
+}
+
+.solution-descr {
+  &__title {}
+
+  >.product__p,
+  >.product__ol,
+  >.product__ul {
+
+    &:last-child {}
+  }
+
+  >.product__p {
+
+    +.product__ol,
+    +.product__ul {}
+  }
+}
+
+.solution-schemes {
+  &__text-block {}
+
+  &__title {}
+
+  &__text {}
+
+  &__schemes {
+    >.slick-list {
+      >.slick-track {}
+    }
+
+    &.slick-slider {
+      >.solution-schemes__nav {}
+    }
+  }
+
+  &__scheme {}
+
+  &__nav {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+}
+
+.solution-scheme {
+  &__fig {}
+
+  &__img {}
+
+  &__title {}
+}
+
+
+.product-docs {
+  &__text {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__files {
+    flex-flow: row wrap;
+
+    .doc {
+      &:last-child {}
+    }
+
+    .doc-wrap {
+      margin-right: 20px;
+      width: 258px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    .doc__img {
+      margin: 0;
+    }
+
+    .doc__text {}
+
+    .doc__title {}
+
+    .doc__size {}
+  }
+}
+
+.product-functions {
+  &__ul {}
+
+  &__ol {}
+
+  &__li {}
+}
+
+.product-scheme {
+  &__fig {}
+
+  &__img {}
+
+  &__title {}
+}

@@ -1,0 +1,21 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+// blocks import
+@import 'general/buttons/buttons.1024';
+@import 'general/popups/popups.1024';
+@import 'general/sliders/sliders.1024';
+@import 'general/forms/forms.1024';
+@import 'general/interface/interface.1024';
+@import '../layouts/search-form/search-form.1024';
+@import '../layouts/header/header.1024';
+@import '../layouts/mobile-menu/mobile-menu.1024';
+@import '../layouts/map/map.1024';
+@import '../layouts/contacts/contacts.1024';
+@import '../layouts/double-form/double-form.1024';
+@import '../layouts/footer/footer.1024';
+@import '../layouts/import-popup/import-popup.1024';
+@import '../layouts/consult-popup/consult-popup.1024';
+@import '../layouts/order-popup/order-popup.1024';

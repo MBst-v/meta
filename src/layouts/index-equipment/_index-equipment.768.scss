@@ -1,0 +1,46 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.equipments-sect,
+.solutions-sect {
+  &__title {
+    font-size: 32px;
+  }
+}
+
+.equipments-sect {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.solutions-sect {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.equipments,
+.solutions {
+  &__link {
+    width: 216px;
+    &:last-child:nth-child(5) {
+      margin: 0 auto 0 20px;
+    }
+  }
+}
+
+.equipment,
+.solution {
+  width: 216px;
+  // &:nth-last-child(3) {
+  //   margin: 0;
+  // }
+  &__title {}
+
+  &__img {}
+
+  &__count {
+    display: none;
+  }
+}

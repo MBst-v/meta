@@ -1,0 +1,41 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.related-products {
+  padding-top: 35px;
+  overflow: hidden;
+  &__title {
+    margin: 0 0 20px;
+    font: bold 22px/100% Montserrat;
+  }
+
+  &__link {
+    font: 16px/100% Montserrat;
+    color: $grey;
+  }
+
+  &__wrap {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  &__product {
+    // Регулируем высоту и ширину с помощью font-size
+    font-size: 280px;
+    margin: 0 0 40px;
+    width: 1em;
+    &:nth-child(4) {
+      display: none;
+    }
+    > .product__img {
+      width: 1em;
+      height: 1em;
+      color: rgba(0,0,0,0);
+    }
+    > .product__title {}
+    > .product__descr {}
+    > .product__link {}
+  }
+}

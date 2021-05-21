@@ -1,0 +1,57 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+/* Описание .search-inp частично в interface.scss */
+
+/* Описание .tel частично в interface.scss */
+
+.hdr {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+  position: relative;
+  z-index: 2;
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    animation: translateToBottom .5s;
+    box-shadow: 0px 5px 10px rgba(97, 97, 97, 0.1);
+    .hdr__logo-img {
+      width: 80px;
+    }
+  }
+  &__top {}
+
+  &__logo {}
+
+  &__logo-img {
+    object-fit: contain;
+  }
+
+  &__bottom {}
+
+  &__nav {}
+
+  &__tel {}
+
+  &__search-form {}
+
+  &__burger {}
+
+  &__burger-box {}
+
+  &__burger-inner {}
+}
+
+.hdr__nav,
+.hdr__search-form,
+.hdr__tel {
+  display: none;
+}

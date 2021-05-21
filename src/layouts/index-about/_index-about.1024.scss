@@ -1,0 +1,58 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  padding-top: 120px;
+  &__gallery {
+    &-img {}
+
+    &-nav {}
+
+    &-prev {}
+
+    &-next {}
+  }
+
+  &__title {}
+
+  &__descr {
+    width: 533px;
+  }
+
+  &__feats {
+    margin: 50px 0 100px;
+    width: 533px;
+  }
+}
+
+.about-partners {
+  &__nav {}
+
+  &__dots {}
+}
+
+#about-partners {
+   > .slick-list {
+    // (16px ширина стреки + 10px отступ стрелки + 3px отступ) * 2
+    max-width: calc(100% - 58px);
+  }
+}
+
+#about-gallery {
+  width: 380px;
+}
+
+.feat {
+
+  &:nth-last-child(n+2) {}
+
+  &__img {}
+
+  &__title {}
+}
+
+.partner {
+  height: 72px;
+}

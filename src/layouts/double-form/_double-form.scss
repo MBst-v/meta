@@ -1,0 +1,277 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.double-form-sect {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.double-form-block {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+}
+
+.double-form-wrap {
+  grid-row: 2;
+  grid-column: 1;
+  margin-top: 35px;
+  font: 16px/140% Montserrat;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity .5s .5s;
+  }
+}
+
+.double-form-headings {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-flow: column;
+  font: bold 24px/100% Montserrat;
+}
+
+.double-form-title {
+  text-align: left;
+  color: $lightgrey;
+  transition: color .5s;
+
+  &:first-child {
+    margin: 0 0 20px;
+  }
+
+  &.is-active {
+    pointer-events: none;
+    color: $blue;
+
+    &:first-child {
+      color: $red;
+    }
+  }
+}
+
+.double-form-contacts {
+  margin: 80px 0 0 -20px;
+  padding: 35px 20px;
+  width: 100vw;
+  background: $lightblue;
+  font: 16px/100% Montserrat;
+
+  &__title {
+    margin: 0 0 30px;
+    font: bold 32px/100% Montserrat;
+  }
+
+
+  &__contact_tel,
+  &__contact_support-tel,
+  &__contact_email {
+    margin: 0 0 30px;
+  }
+
+  &__contact_tel {}
+
+  &__contact_support-tel {}
+
+  &__contact_email {}
+
+  &__contact_address {
+    width: 280px;
+  }
+}
+
+.order-form,
+.ask-form {
+  &__descr {
+    margin: 0 0 35px;
+    width: 280px;
+  }
+
+  &__field_name,
+  &__field_tel,
+  &__field_email,
+  &__field_msg {
+    margin: 0 0 30px;
+  }
+
+  &__bottom {
+    margin: auto;
+    width: 280px;
+  }
+
+  &__btn {
+    margin-top: 35px;
+    width: 280px;
+    height: 50px;
+  }
+}
+
+.order-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}
+
+.ask-form {
+  &__descr {}
+
+  &__field_name {}
+
+  &__field_tel {}
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__files-upload-block {
+
+    // color: $blue;
+    // margin: 0 0 20px;
+    >.uploadedfiles {
+      // color: $lightgrey;
+    }
+  }
+
+  &__bottom {}
+
+  &__check {}
+
+  &__btn {}
+}
+
+.wpcf7-drag-n-drop-file {
+  display: none;
+}
+
+.codedropz-upload-wrapper {
+  margin: 0 0 15px;
+  font: 12px/140% Montserrat;
+}
+
+.codedropz-upload-inner {
+
+  >h3,
+  >span {
+    display: none;
+  }
+}
+
+.codedropz-btn-wrap {}
+
+.cd-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  color: $blue;
+  &::after {
+    margin: 0 0 0 5px;
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: center/contain no-repeat;
+    vertical-align: middle;
+  }
+}
+
+.lazyloaded {
+  .cd-upload-btn {
+    &::after {
+      background-image: url(../img/icon-paper-clip.svg);
+    }
+  }
+}
+
+.dnd-upload-counter {
+  display: none;
+}
+
+.remove-file {
+  display: inline-block;
+  margin: 0 0 0 7px;
+}
+
+.dnd-icon-remove {
+  transition: color .5s;
+  &::after {
+    padding: 2.5px;
+    content: 'x';
+    pointer-events: none;
+  }
+  &.deleting {
+    &::after {
+      display: none;
+    }
+  }
+  &:not(.deleting):hover {
+    color: $black;
+  }
+}
+
+.dnd-upload-details > .has-error,
+.has-error-msg {
+  margin-top: 3px;
+  display: block;
+  font: normal 9px/150% sans-serif;
+  color: $red;
+}
+
+.dnd-upload-status {
+  // margin: 7px 20px 7px 0;
+  margin: 7px 0;
+  display: block;
+  color: #D5D4D0;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &.complete {
+    .dnd-progress-bar {
+      color: #D5D4D0;
+    }
+  }
+  // &:nth-last-of-type(n+2) {
+    // margin: 10px 0;
+  // }
+}
+
+.dnd-upload-details {
+  display: flex;
+  // position: relative;
+  > .has-error {
+    // position: absolute;
+    // left: 0;
+    // bottom: -14px;
+  }
+  > .name > em {
+    padding: 0 0 0 5px;
+  }
+}
+
+.dnd-upload-image {
+  display: none;
+}
+
+.dnd-progress-bar {
+  padding: 0 5px 0 0;
+  order: -1;
+  min-width: 31px;
+  max-height: 16px;
+  color: $blue;
+}

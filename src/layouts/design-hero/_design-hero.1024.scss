@@ -1,0 +1,17 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect {
+  &__img {
+    width: 455px;
+    height: 455px;
+  }
+
+  &__title {
+    >.br {}
+  }
+
+  &__descr {}
+}

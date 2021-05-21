@@ -1,0 +1,61 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect ~ .ftr {
+  margin-top: -35px;
+}
+
+.ftr {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: 13px/100% Montserrat;
+  background: $lightblue;
+  &__logo {
+    margin: 0 0 30px;
+  }
+
+  &__logo-img {
+    width: 161px;
+    height: 48px;
+  }
+
+  &__copyright {
+    margin: 0 0 40px;
+    line-height: 150%;
+    > .br1 {
+      display: none;
+    }
+  }
+
+  &__nav {}
+
+  &__nav-list {}
+
+  &__nav-li {
+    &:nth-last-child(n+2) {
+      margin: 0 0 22px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 45px;
+  }
+
+  &__policy {}
+
+  &__dev {
+    margin-top: 25px;
+  }
+
+  &__dev-link {
+    font: 600 14px SegoeUI;
+    letter-spacing: 0.08em;
+  }
+}

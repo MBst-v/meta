@@ -1,0 +1,11 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bg" preserveAspectRatio="none" viewBox="0 0 1000 1000">
+    <path fill="#E5E5E5" d="M0 0h1000v1000H0z" />
+  </symbol>
+  <symbol id="logo" viewBox="0 0 1000 1000">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M450.585 544.391v-22.965H430.5l48.678-12.548v-18.467l-49.86-12.074h49.86l-.237-.71h.237v-48.061l12.287 48.297h18.431l12.524-48.771v20.124h22.921V395h-33.082l-11.815 44.509L489.338 395h-33.554v59.898H396v33.383l44.661 11.127L396 511.246v33.145h54.585zm94.756-66.291H522.42h22.921z" fill="#25282B" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M604.889 455.846h-82.941v22.728h48.442l-48.442 12.548v18.704l49.387 11.837h-49.387v48.534l-12.287-48.06h-18.432l-12.524 48.297v-48.297h-22.921V605h33.082l11.579-44.509L511.551 605h33.318v-59.898h59.784V511.72l-44.188-11.128 44.188-11.837v-32.909h.236z" fill="#787B7E" />
+  </symbol>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bg" />
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo" />
+</svg>

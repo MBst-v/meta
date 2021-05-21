@@ -1,0 +1,73 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.ftr {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+  justify-content: stretch;
+  text-align: left;
+  &__logo {
+    margin: 0 0 15px;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  &__logo-img {}
+
+  &__copyright {
+    margin: 0;
+    grid-row: 2;
+    grid-column: 1;
+    > .br1 {
+      display: block;
+    }
+  }
+
+  &__nav {
+    margin: 0;
+    grid-row: 1/span 2;
+    grid-column: 2;
+    // width: 100%;
+  }
+
+  &__nav-list {
+    // column-count: 3;
+  }
+
+  &__nav-li {
+    &:nth-last-child(-n+3) {
+      text-align: right;
+    }
+    &:nth-child(4), 
+    &:nth-child(5), 
+    &:nth-child(6), {
+      text-align: center;
+    }
+    &:nth-last-child(n+2) {}
+  }
+
+  &__bottom {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    grid-row: 3;
+    grid-column: 1/span 2;
+  }
+
+  &__policy {}
+
+  &__dev {
+    order: -1;
+    margin: 0 auto 0 0;
+  }
+
+  &__dev-link {
+    font-size: 15px;
+  }
+}

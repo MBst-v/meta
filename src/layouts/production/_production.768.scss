@@ -1,0 +1,130 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.production {
+  padding-top: 75px;
+  padding-bottom: 70px;
+  // padding-bottom: 120px;
+  position: relative;
+
+  &__pagination {
+    >.page-numbers {
+      &:nth-last-child(n+2) {}
+
+      &.next,
+      &.prev {
+        font-size: inherit;
+        margin: 0 0 0 20px;
+      }
+
+      &.next {
+        >.page-numbers-arrow {}
+      }
+
+      &.prev {
+        margin: 0 35px 0 0;
+
+        >.page-numbers-arrow {}
+      }
+
+      &.current {}
+
+      &:hover {}
+
+      &.next:hover,
+      &.prev:hover {}
+    }
+  }
+
+
+  &__filter {}
+
+  &__catalogue-wrap {}
+
+  &__title {
+    font-size: 28px;
+    // line-height: 140%;
+  }
+
+  &__descr {
+    margin: 0 0 50px;
+  }
+
+  &__catalogue {
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+
+  &__loadmore {
+    margin: 20px auto 50px;
+  }
+
+  &__product {
+    width: 216px;
+
+    &:nth-child(n) {
+      margin: 0 20px 50px 0;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.product {
+
+  &__img {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__link {}
+}
+
+#filter-open-btn {
+  margin: 0;
+  position: absolute;
+  right: calc(50% - 340px);
+  top: 85px;
+
+  &::before {}
+}
+
+
+.production {
+  &__filter {}
+}
+
+.filter {
+  &__cnt {
+    max-width: 688px;
+  }
+
+  &__close {
+    right: calc(50% - 265px);
+  }
+
+  &__title {}
+
+  &__buttons {
+    height: 35px;
+  }
+
+  &__switch-btn {
+    &.current {}
+  }
+
+  &__categories {}
+
+  &__category {
+    &.current {}
+  }
+
+  &__link {
+    &:first-child {}
+  }
+}

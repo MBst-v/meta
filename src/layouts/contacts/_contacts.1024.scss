@@ -1,0 +1,66 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {
+  display: flex;
+}
+
+.contacts {
+  padding: 45px 70px 55px calc(50% - 470px);
+  // min-width: 340px;
+  flex-shrink: 0;
+  &__title {}
+
+  &__contacts-block {
+    column-count: auto;
+  }
+
+  &__contact {
+    &_tel {}
+
+    &_email {
+      margin: 35px 0;
+    }
+
+    &_address {}
+  }
+}
+
+.contacts-form-wrap {
+  padding: 45px calc(50% - 470px) 55px 20px;
+}
+
+.contacts-form {
+
+  &__title {
+    margin: 0 0 25px;
+  }
+
+  &__descr {}
+
+  &__field {}
+
+  &__field_name {}
+
+  &__field_name,
+  &__field_tel,
+  &__field_email,
+  &__field_msg {
+    width: 300px;
+  }
+
+  &__field_email {}
+
+  &__field_msg {}
+
+  &__bottom {
+  }
+
+  &__check {
+    max-width: 295px;
+  }
+
+  &__btn {}
+}

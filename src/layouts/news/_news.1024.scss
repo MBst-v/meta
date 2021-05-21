@@ -1,0 +1,39 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.news-sect {
+  padding-top: 65px;
+  padding-bottom: 140px;
+  &__title {}
+
+  &__descr {}
+
+  &__loadmore {}
+
+  &__loadmore-text {}
+}
+
+.news {}
+
+.post {
+  width: calc((100% - 30px) / 3);
+  &:nth-child(n) {
+    margin: 0 15px 70px 0;
+  }
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  &:last-child {}
+
+  &__img {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__date {}
+
+  &__more {}
+}

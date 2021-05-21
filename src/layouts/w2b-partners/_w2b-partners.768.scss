@@ -1,0 +1,39 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.partners-sect {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__title {
+    margin: 0 0 45px;
+    font-size: 24px;
+  }
+
+  &__city {}
+
+  &__map {
+    top: responsive('768->1023', '80->40');
+    right: responsive('768->1023', '-150->-375');
+    width: responsive('768->1023', '545->796');
+    height: auto;
+  }
+}
+
+.partner {
+  &__city {}
+
+  &__block {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    padding-right: 435px;
+  }
+
+  &__descr {
+    &:nth-last-child(n+2) {}
+  }
+}

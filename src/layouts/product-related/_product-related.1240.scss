@@ -1,0 +1,30 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.related-products {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {}
+
+  &__link {}
+
+  &__wrap {}
+
+  &__product {
+    // Регулируем высоту и ширину с помощью font-size
+    font-size: 270px;
+    &:nth-child(n) {
+      margin-right: 30px;
+    }
+    &:nth-child(4) {
+      margin-right: 0;
+      display: flex;
+    }
+    > .product__img {}
+    > .product__title {}
+    > .product__descr {}
+    > .product__link {}
+  }
+}

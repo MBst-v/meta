@@ -1,0 +1,35 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  &__gallery-img {}
+
+  &__gallery-nav {}
+
+  &__gallery-prev,
+  &__gallery-next {}
+
+  &__gallery-next {}
+
+  &__title {}
+
+  &__text {}
+
+  &__descr {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__feats {}
+}
+
+#about-gallery {}
+
+.feat {
+  &__img {}
+
+  &__title {}
+}

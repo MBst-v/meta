@@ -1,0 +1,19 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.design-sect {
+  &__img {
+    margin: 15px 0 0 150px;
+    width: 435px;
+    height: 435px;
+  }
+
+  &__title {
+    max-width: 620px;
+    >.br {}
+  }
+
+  &__descr {}
+}

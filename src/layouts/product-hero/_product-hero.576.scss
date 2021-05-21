@@ -1,0 +1,99 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.product-hero {
+  &__gallery {
+    margin: 0 0 45px;
+  }
+
+  &__text {}
+
+  &__title {}
+
+  &__descr {}
+
+  &__list {}
+
+  &__list-title {}
+
+  &__ul {}
+
+  &__li {
+    &:nth-last-child(n+2) {}
+
+    &::before {}
+  }
+
+  &__btn {
+    margin: 45px 0 0;
+  }
+}
+
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  &__slide {
+    padding: 0 60px;
+  }
+
+  &__img {}
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+}
+
+// Основной слайдер
+#product-gallery-slides {
+  width: 450px;
+  overflow: hidden;
+  .product-gallery__slide {
+    width: 450px;
+    height: 450px;
+  }
+  .product-gallery__img {
+    // object-fit: contain;
+  }
+  +#product-gallery-arrows {}
+}
+
+// Блок стрелок
+#product-gallery-arrows {
+  width: 450px;
+  margin: 20px 0 0;
+  order: 10;
+}
+
+// Мини-слайдер с навигацией по 4 слайда
+#product-gallery-nav {
+  margin-left: auto;
+  width: 75px;
+  &.slick-slider {}
+
+  .slick-track {
+    flex-flow: column;
+  }
+
+  .product-gallery__slide {
+    margin: 0 0 20px;
+    width: 75px;
+    height: 75px;
+    &.active {}
+  }
+}
+
+.product-hero.solutions {
+  #product-gallery-slides {
+    .product-gallery__slide:first-child {
+      .product-gallery__img {
+        height: 100%;
+      }
+    }
+  }
+}

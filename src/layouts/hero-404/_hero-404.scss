@@ -1,0 +1,38 @@
+// assets import
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.hero-404 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  font: 16px/140% Montserrat;
+  color: $black;
+  &__img {
+    margin: 0 0 45px;
+    max-width: 350px;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    width: 280px;
+    font: bold 24px/140% Montserrat;
+  }
+
+  &__descr {
+    margin: 0 0 35px;
+    width: 280px;
+  }
+
+  &__link {
+    width: 260px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
