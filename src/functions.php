@@ -50,6 +50,12 @@ if ( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false || strpos( $_SERV
 }
 
 
+// Запрет обновления CF7
+add_filter( 'site_transient_update_plugins', function( $value ) {
+  unset( $value->response['contact-form-7/wp-contact-form-7.php'] );
+  return $value;
+} );
+
 // Удаление разных скриптов и стилей от wp
 // Отключаем гутенберг
 // Отключаем emoji
