@@ -1450,6 +1450,8 @@ function online_matching_get_results() {
       $products[] = $meta19580;
       $products[] = $meta9210;
       $products[] = $cdr3000;
+      $products[] = $meta19016;
+      $products[] = $meta9314;
 
       foreach ( $result_calculate_u as $key => $val ) {
         $title = $meta4901->post_title . '-' . $val['zones'];
