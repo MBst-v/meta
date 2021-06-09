@@ -1230,80 +1230,6 @@ function online_matching_get_results() {
 
     } elseif ( mb_stripos( $system, '19830' ) !== false ) {
 
-      // $meta19830 =get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 19830'
-      // ] )[0];
-      // $meta9154 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9154'
-      // ] )[0];
-      // $meta9709 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9709'
-      // ] )[0];
-      // $meta9716 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9716'
-      // ] )[0];
-      // $meta9923 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9923'
-      // ] )[0];
-      // $meta9701 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9701'
-      // ] )[0];
-      // $meta18580 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 18580'
-      // ] )[0];
-      // $meta19426 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 19426'
-      // ] )[0];
-      // $meta19580 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 19580'
-      // ] )[0];
-      // $meta9210 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9210'
-      // ] )[0];
-      // $cdr3000 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'CDR-3000'
-      // ] )[0];
-      // $meta19016 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 19016'
-      // ] )[0];
-      // $meta9314 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9314'
-      // ] )[0];
-      // // Шкаф
-      // $meta4901 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 4901'
-      // ] )[0];
-      // $meta9901 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9901'
-      // ] )[0];
-      // $meta9910 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9910'
-      // ] )[0];
-      // $meta9919 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9919'
-      // ] )[0];
-      // $meta9717 = get_posts( [
-      //   'post_type' => 'equipment',
-      //   'title' => 'МЕТА 9717'
-      // ] )[0];
-
       $meta19830 = get_post( 6786 );
       $meta9154 = get_post( 9857 );
       $meta9709 = get_post( 9879 );
@@ -1390,7 +1316,7 @@ function online_matching_get_results() {
           $meta18580->post_title .= '-40';
         }
 
-        if ( $microphones < 1 ) {
+        if ( $microphones > 1 ) {
           $meta19426->count = 1;
           $meta9716->count += 1;
         }
