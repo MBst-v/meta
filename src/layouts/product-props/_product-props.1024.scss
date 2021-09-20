@@ -12,6 +12,19 @@
 
 .product-props {
 
+  &__videos {
+    margin: 70px 0 0;
+    iframe {
+      width: calc((100% - 30px) / 2);
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+    }
+    .product-videos__nav {
+      margin: 40px 0 0;
+    }
+  }
+
   &__docs {
     padding: 70px 0 50px;
   }

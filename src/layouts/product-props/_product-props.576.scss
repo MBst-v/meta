@@ -5,6 +5,12 @@
 
 .product-props {
 
+  &__videos {
+    iframe {
+      height: 315px;
+    }
+  }
+
   &__docs {}
 
   &__table-wrap {}

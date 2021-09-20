@@ -21,6 +21,37 @@
     display: inline;
   }
 
+  &__videos {
+    margin: 40px auto 0;
+    &.slick-slider {
+      display: flex;
+      flex-flow: column;
+      .product-videos__nav {
+        order: 10;
+        display: flex;
+      }
+    }
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: responsive('320->575', '150->300');
+    }
+    .slick-list {
+      overflow: hidden;
+    }
+
+    .product-videos__nav {
+      margin: 20px 0 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-videos__prev {
+      margin: 0 50px 0 0;
+    }
+  }
+
   &__important {}
 
   &__important-start {

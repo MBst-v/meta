@@ -31,5 +31,19 @@ require 'template-parts/consult-popup.php';
 if ( is_super_admin() || is_admin_bar_showing() ) {
   require 'template-parts/import-popup.php';
 } ?>
+<script>
+  if ('serviceWorker' in navigator) {
+   window.addEventListener('load', function() {  
+     navigator.serviceWorker.register('/sw.js').then(
+       function(registration) {
+         // Registration was successful
+         console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+       function(err) {
+         // registration failed :(
+         console.log('ServiceWorker registration failed: ', err);
+       });
+   });
+  }
+</script>
 	</body>
 </html>

@@ -1836,11 +1836,53 @@ document.addEventListener('DOMContentLoaded', function() {
       solutionSchemes = id('solution-schemes'),
   
       // Слайдер товаров в решении
-      solutionEquipments = id('solution-equipments');
+      solutionEquipments = id('solution-equipments'),
   
-      SLIDER.createArrow = createArrow;
-      SLIDER.arrowSvg = arrowSvg;
-      SLIDER.hasSlickClass = hasSlickClass;
+      // Слайдер видео
+      videosSlider = q('.product-props__videos');
+  
+    SLIDER.createArrow = createArrow;
+    SLIDER.arrowSvg = arrowSvg;
+    SLIDER.hasSlickClass = hasSlickClass;
+  
+    if (videosSlider) {
+      let videoSlidesSelector = '.product-props__videos > iframe',
+        videoSlides = qa(videoSlidesSelector, videosSlider),
+  
+        $videosSlider = $(videosSlider),
+  
+        buildVideoSlider = function() {
+          if (media('(min-width:767.98px)') && videoSlides.length < 3) {
+            if (hasSlickClass($videosSlider)) {
+              unslick($videosSlider);
+            }
+          } else {
+            if (hasSlickClass($videosSlider)) {
+              return;
+            }
+            if (videoSlides.length && videoSlides.length > 1) {
+              $videosSlider.slick({
+                infinite: false,
+                slide: videoSlidesSelector,
+                appendArrows: $('.product-videos__nav'),
+                prevArrow: createArrow('product-videos__prev', arrowSvg),
+                nextArrow: createArrow('product-videos__next', arrowSvg),
+                mobileFirst: true,
+                draggable: false,
+                responsive: [{
+                  breakpoint: 767.98,
+                  settings: {
+                    slidesToShow: 2
+                  }
+                }]
+              });
+            }
+          }
+        }
+      windowFuncs.resize.push(buildVideoSlider);
+  
+      console.log(videoSlides.length);
+    }
   
     if (productGallery) {
       let gallerySlideSelector = '.product-gallery__slide',
@@ -2118,7 +2160,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
             }
           }
-          
+  
         }
       windowFuncs.resize.push(buildSolutionEquipmentsSlider);
     }

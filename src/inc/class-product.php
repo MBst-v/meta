@@ -40,6 +40,18 @@ class Product {
 
   }
 
+  public function print_video() {
+    $product_videos = get_field( 'videos' );
+    if ( $product_videos ) : ?>
+      <div class="product-props__videos"> <?php
+        foreach ( $product_videos as $video ) {
+          echo $video['iframe'];
+        } ?>
+        <div class="product-videos__nav"></div>
+      </div> <?php
+    endif;
+  }
+
   public function print_gallery() {
     global $template_directory;
     $product_gallery = get_field( 'gallery' ) ?>

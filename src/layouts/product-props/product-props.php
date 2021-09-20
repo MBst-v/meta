@@ -18,6 +18,8 @@
     </div> <?php
   endif;
 
+  $product->print_video();
+
   if ( $props_table ) {
     $table_title = 'Технические характеристики';
     // Выводим таблицу характеристик
