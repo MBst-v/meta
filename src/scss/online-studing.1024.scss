@@ -1,0 +1,30 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+.online-studing {
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  &__text,
+  &__pic {
+    width: calc(50% - 40px);
+  }
+
+  &__pic {
+    transition: opacity .25s;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__text {
+    margin-right: 40px;
+  }
+
+  &__title {
+    font-size: 28px;
+  }
+}

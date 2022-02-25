@@ -35,6 +35,10 @@
     // Страницы оборудование, решения, их одиночные варианты и онлайн-подбор
     } else if ( is_page( ['equipments', 'solutions'] ) || is_tax( ['equipments', 'solutions'] ) || is_singular( ['equipment', 'solution'] ) || is_page_template( 'online-matching.php' ) ) {
       $page_style = 'product';
+    } else if ( is_page_template( 'registration.php' ) ) {
+      $page_style = 'registration';
+    } else if ( is_page_template( 'online-studing.php' ) ) {
+      $page_style = 'online-studing';
     }
 
   $is_front_page = is_front_page();
@@ -56,11 +60,11 @@
     'SegoeUI-SemiBold.woff'
   ];
   foreach ( $fonts as $font ) : ?>
-    
+
   <link rel="preload" href="<?php echo $template_directory . '/fonts/' . $font ?>" as="font" type="font/woff" crossorigin="anonymous" /> <?php
   endforeach ?>
 
-  <!-- css preload --> 
+  <!-- css preload -->
   <link rel="preload" href="<?php echo $template_directory ?>/style.css" as="style" />
   <link rel="preload" href="<?php echo $template_directory ?>/css/style.css" as="style" />
   <link rel="preload" href="<?php echo $template_directory ?>/css/style.576.css" as="style" media='(min-width: 575.98px)' />

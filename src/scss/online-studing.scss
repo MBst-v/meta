@@ -1,0 +1,33 @@
+// assets import
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+.online-studing {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font: 400 16px/140% Montserrat;
+  display: flex;
+  flex-flow: wrap;
+
+  &__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+  }
+
+  &__descr {
+    color: #25282b;
+  }
+}

@@ -40,6 +40,13 @@
 
   &__nav {
 
+    .has-submenu {
+      > .nav__link[href="#"] {
+        opacity: 1;
+        cursor: default;
+      }
+    }
+
     &-list {}
 
     &-li {

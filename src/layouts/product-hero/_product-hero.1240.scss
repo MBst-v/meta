@@ -47,7 +47,8 @@
 
 // Основной слайдер
 #product-gallery-slides.slick-slider {
-  margin: auto auto auto 0;
+  // margin: 0 auto 0 0;
+  // margin: auto auto auto 0;
   width: 480px;
   .product-gallery__slide {
     width: 480px;

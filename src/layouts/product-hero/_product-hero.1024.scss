@@ -61,7 +61,8 @@
 
 // Основной слайдер
 #product-gallery-slides {
-  margin: auto 20px auto 0;
+  margin: 0 20px 0 0;
+  // margin: auto 20px auto 0;
   width: 460px;
   .product-gallery__slide {
     width: 460px;

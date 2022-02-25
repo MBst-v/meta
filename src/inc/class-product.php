@@ -54,6 +54,7 @@ class Product {
 
   public function print_gallery() {
     global $template_directory;
+    $image_cover = get_field( 'img_cover' );
     $product_gallery = get_field( 'gallery' ) ?>
 
     <div class="product-hero__gallery product-gallery" id="product-gallery"> <?php
@@ -68,14 +69,17 @@ class Product {
       // Если слайд 1, то будем его грузить просто lazy, т.к. slick-slider не будет собран
       // а если слайдов больше 1, то будем делать lazyload методом slick-slider
       $lazy_class = $gallery_count > 1 ? '' : ' lazy';
-      $data_attr = $gallery_count > 1 ? 'data-lazy' : 'data-src' ?>
+      $data_attr = $gallery_count > 1 ? 'data-lazy' : 'data-src';
+
+      // Растягивание изображений
+      $img_cover_class = $image_cover ? ' object-fit-cover' : '' ?>
 
       <div class="product-gallery__slides" id="product-gallery-slides"> <?php
       // Перебираем слайды и формируем из них 2 строки
       // fancybox_slides - основной слайдер по 1 слайду, будет fancybox+slick-slider
       // not_fancybox_slides - слайдер-навигация по 4 слайда, будет обычный slick-slider
         foreach ( $product_gallery as $img ) {
-          $img_tag = '<img src="#" alt="' . $post->title . '" ' . $data_attr . '="' . $img . '" class="product-gallery__img' . $lazy_class . '">';
+          $img_tag = '<img src="#" alt="' . $post->title . '" ' . $data_attr . '="' . $img . '" class="product-gallery__img' . $lazy_class . $img_cover_class . '">';
           $fancybox_slides .= '<a href="' . $img . '" data-fancybox="images" class="product-gallery__slide">' . $img_tag . '</a>';
           $not_fancybox_slides .= '<div class="product-gallery__slide">' . $img_tag . '</div>';
         }

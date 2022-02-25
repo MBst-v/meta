@@ -121,7 +121,7 @@
       </div>
       <div class="solution-equipments__slider" id="solution-equipments"> <?php
         // slick = true
-        print_catalogue( $solution_equipments, 'solution-equipments', true ) ?>
+        print_catalogue( $solution_equipments, 'solution-equipments' ) ?>
         <div class="solution-equipments__nav"></div>
       </div>
     </div> <?php

@@ -35,7 +35,7 @@ function beautify_text( $text=null ) {
     $text = preg_replace('/,\s*\n/', ', ', $text );
     // Добавляем пробелы после затяпых
     $text = preg_replace( '/,(?!\s)/', ', ', $text );
-    // Добавляем пробелы после сокразений пункт п.
+    // Добавляем пробелы после сокращений пункт п.
     $text = preg_replace( '/\sп\.(?!\s)/', ' п.&nbsp;', $text );
     // Добавляем неразрывный пробел после исп.
     $text = preg_replace( '/\sисп\.\s?(?=[аАaA-яЯzZ])/', ' исп.&nbsp;', $text );

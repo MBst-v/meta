@@ -97,7 +97,7 @@
 }
 
 @keyframes fadeIn {
-  0 {
+  from {
     opacity: 0;
   }
   to {
@@ -106,10 +106,11 @@
 }
 
 @keyframes fadeOut {
-  0 {
+  0% {
     opacity: 1;
   }
-  to {
+
+  100% {
     opacity: 0;
   }
 }

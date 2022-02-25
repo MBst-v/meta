@@ -86,6 +86,10 @@
         display: none;
       }
     }
+
+    &-li.has-submenu {
+      display: none;
+    }
   }
 
   &__tel {

@@ -32,6 +32,9 @@
       }
     }
     iframe {
+      &:only-of-type {
+        margin: auto;
+      }
       width: 100%;
       max-width: 100%;
       height: responsive('320->575', '150->300');
